@@ -1,0 +1,25 @@
+<script lang="ts">
+	import config from '../config.json';
+	import { page } from '$app/state';
+
+	const { navbar } = config;
+	const pathname = $derived(page.url.pathname);
+</script>
+
+<main>
+	<div id="navbar" class="flex">
+		<ul class="flex items-center justify-between gap-4">
+			{#each navbar.items as item}
+				{#if item.href === pathname}
+					<li>
+						<a href={item.href} class="text-xl font-bold underline bg-transparent">{item.name}</a>
+					</li>
+				{:else}
+					<li>
+						<a href={item.href} class="text-xl font-bold bg-transparent">{item.name}</a>
+					</li>
+				{/if}
+			{/each}
+		</ul>
+	</div>
+</main>

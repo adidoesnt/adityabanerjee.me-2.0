@@ -1,0 +1,27 @@
+{
+	"name": "Aditya Banerjee",
+	"navbar": {
+		"items": [
+			{
+				"name": "About",
+				"href": "/about"
+			},
+			{
+				"name": "Timeline",
+				"href": "/timeline"
+			},
+			{
+				"name": "Projects",
+				"href": "/projects"
+			},
+			{
+				"name": "Blog",
+				"href": "/blog"
+			},
+			{
+				"name": "Acknowledgements",
+				"href": "/acknowledgements"
+			}
+		]
+	}
+}
