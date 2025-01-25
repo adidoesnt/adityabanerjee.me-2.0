@@ -1,6 +1,51 @@
 {
 	"name": "Aditya Banerjee",
 	"headline": ["Part developer, part musician.", "JavaScript is my poison of choice."],
+	"prompts": {
+		"info": "Select a question from below!",
+		"prompts": [
+			{
+				"question": "🏆 What's your professional background?",
+				"responses": ["placeholder", "placeholder again", "last placeholder I swear"]
+			},
+			{
+				"question": "🎓 Where did you study?",
+				"responses": ["placeholder", "placeholder again", "last placeholder I swear"]
+			},
+			{
+				"question": "💼 What are you currently working on?",
+				"responses": ["placeholder", "placeholder again", "last placeholder I swear"]
+			},
+			{
+				"question": "🛠️ What's your favorite tech stack right now?",
+				"responses": ["placeholder", "placeholder again", "last placeholder I swear"]
+			},
+			{
+				"question": "🔥 What technologies do you specialise in?",
+				"responses": ["placeholder", "placeholder again", "last placeholder I swear"]
+			},
+			{
+				"question": "🚀 Can you tell me about a cool project you've worked on?",
+				"responses": ["placeholder", "placeholder again", "last placeholder I swear"]
+			},
+			{
+				"question": "🎯 What's your portfolio site built with?",
+				"responses": ["placeholder", "placeholder again", "last placeholder I swear"]
+			},
+			{
+				"question": "🎮 What do you do outside of coding?",
+				"responses": ["placeholder", "placeholder again", "last placeholder I swear"]
+			},
+			{
+				"question": "📖 Any favourite books or blogs on tech?",
+				"responses": ["placeholder", "placeholder again", "last placeholder I swear"]
+			},
+			{
+				"question": "🌍 Why did you move to London?",
+				"responses": ["placeholder", "placeholder again", "last placeholder I swear"]
+			}
+		]
+	},
 	"navbar": {
 		"items": [
 			{
