@@ -1,5 +1,9 @@
 {
 	"name": "Aditya Banerjee",
+	"headline": [
+		"Part developer, part musician.", 
+		"JavaScript is my poison of choice."
+	],
 	"navbar": {
 		"items": [
 			{
