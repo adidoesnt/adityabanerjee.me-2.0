@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Header from '$lib/components/header.svelte';
+	import Footer from '$lib/components/footer.svelte';
 	import '../app.css';
 	import { theme } from '$lib/context/theme';
 
@@ -13,14 +14,9 @@
 </script>
 
 <main>
-	<div
-		id="main-container"
-		class={className}
-	>
+	<div id="main-container" class={className}>
 		<Header />
 		{@render children()}
-		<div id="footer">
-			<p>footer placeholder</p>
-		</div>
+		<Footer />
 	</div>
 </main>

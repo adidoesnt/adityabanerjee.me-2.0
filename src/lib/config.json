@@ -27,5 +27,12 @@
 				"href": "/acknowledgements"
 			}
 		]
+	},
+	"footer": {
+		"github": "https://github.com/adidoesnt",
+		"linkedin": "https://linkedin.com/in/aditya-banerjee-6065281b1/",
+		"email": "mailto:aditya_banerjee@icloud.com",
+		"facebook": "https://www.facebook.com/aditya.banerjee3",
+		"instagram": "https://www.instagram.com/adidoesnt/"
 	}
 }
