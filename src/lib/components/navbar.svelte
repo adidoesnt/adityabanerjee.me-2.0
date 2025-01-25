@@ -8,7 +8,7 @@
 
 <main>
 	<div id="navbar" class="flex">
-		<ul class="flex items-center justify-between gap-4">
+		<ul class="flex items-center justify-between gap-16">
 			{#each navbar.items as item}
 				{#if item.href === pathname}
 					<li>
