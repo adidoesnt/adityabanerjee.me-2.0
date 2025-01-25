@@ -1,9 +1,6 @@
 {
 	"name": "Aditya Banerjee",
-	"headline": [
-		"Part developer, part musician.", 
-		"JavaScript is my poison of choice."
-	],
+	"headline": ["Part developer, part musician.", "JavaScript is my poison of choice."],
 	"navbar": {
 		"items": [
 			{
@@ -34,5 +31,8 @@
 		"email": "mailto:aditya_banerjee@icloud.com",
 		"facebook": "https://www.facebook.com/aditya.banerjee3",
 		"instagram": "https://www.instagram.com/adidoesnt/"
+	},
+	"emojis": {
+		"sad": "😢"
 	}
 }
