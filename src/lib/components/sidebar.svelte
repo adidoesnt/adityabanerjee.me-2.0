@@ -4,8 +4,8 @@
 
 	const sideBarClass = $derived(
 		$theme === 'dark'
-			? 'fixed left-0 flex flex-col items-center gap-8 w-fit max-w-[25dvw] p-8 h-full bg-primary text-text'
-			: 'fixed left-0 flex flex-col items-center gap-8 w-fit max-w-[25dvw] p-8 h-full bg-accent text-background'
+			? 'fixed left-0 flex flex-col items-center gap-8 w-fit min-w-[15dvw] max-w-[25dvw] p-8 h-full bg-primary text-text'
+			: 'fixed left-0 flex flex-col items-center gap-8 w-fit min-w-[15dvw] max-w-[25dvw] p-8 h-full bg-accent text-background'
 	);
 	let show = $state(false);
 	let { title, items } = $props();
