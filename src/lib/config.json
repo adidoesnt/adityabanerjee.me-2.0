@@ -26,6 +26,57 @@
 			}
 		]
 	},
+	"projects": {
+		"featured": [
+			{
+				"name": "Beings of Habit",
+				"href": "https://www.placeholder.com",
+				"imageSrc": "/images/placeholder.png"
+			},
+			{
+				"name": "EchoFinder",
+				"href": "https://www.placeholder.com",
+				"imageSrc": "/images/placeholder.png"
+			},
+			{
+				"name": "TeleDr",
+				"href": "https://www.placeholder.com",
+				"imageSrc": "/images/placeholder.png"
+			}
+		],
+		"other": [
+			{
+				"name": "Placeholder",
+				"href": "https://www.placeholder.com",
+				"imageSrc": "/images/placeholder.png"
+			},
+			{
+				"name": "Placeholder",
+				"href": "https://www.placeholder.com",
+				"imageSrc": "/images/placeholder.png"
+			},
+			{
+				"name": "Placeholder",
+				"href": "https://www.placeholder.com",
+				"imageSrc": "/images/placeholder.png"
+			},
+			{
+				"name": "Placeholder",
+				"href": "https://www.placeholder.com",
+				"imageSrc": "/images/placeholder.png"
+			},
+			{
+				"name": "Placeholder",
+				"href": "https://www.placeholder.com",
+				"imageSrc": "/images/placeholder.png"
+			},
+			{
+				"name": "Placeholder",
+				"href": "https://www.placeholder.com",
+				"imageSrc": "/images/placeholder.png"
+			}
+		]
+	},
 	"prompts": {
 		"info": "Select a question from below!",
 		"prompts": [

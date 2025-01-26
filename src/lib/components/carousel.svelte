@@ -1,10 +1,9 @@
 <script lang="ts">
 	import { theme } from '$lib/context/theme';
-	import { acknowledgements } from '$lib/config.json';
 	import NextIcon from '$lib/assets/next-icon.svelte';
 	import PrevIcon from '$lib/assets/prev-icon.svelte';
 
-	const { items } = acknowledgements;
+	let { items } = $props();
 	let currentIndex = $state(0);
 
     const incrementWithModulus = (index: number, max: number) => {
