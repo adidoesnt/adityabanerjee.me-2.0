@@ -1,6 +1,31 @@
 {
 	"name": "Aditya Banerjee",
 	"headline": ["Part developer, part musician.", "JavaScript is my poison of choice."],
+	"acknowledgements": {
+		"message": "I would like to thank:",
+		"items": [
+			{
+				"name": "Strive Education",
+				"href": "https://www.placeholder.com",
+				"imageSrc": "/images/placeholder.png"
+			},
+			{
+				"name": "ByondXR",
+				"href": "https://www.placeholder.com",
+				"imageSrc": "/images/placeholder.png"
+			},
+			{
+				"name": "Activate Interactive",
+				"href": "https://www.placeholder.com",
+				"imageSrc": "/images/placeholder.png"
+			},
+			{
+				"name": "Pencil Battery",
+				"href": "https://www.placeholder.com",
+				"imageSrc": "/images/placeholder.png"
+			}
+		]
+	},
 	"prompts": {
 		"info": "Select a question from below!",
 		"prompts": [
