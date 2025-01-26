@@ -1,9 +1,14 @@
 <script lang="ts">
 	import config from '$lib/config.json';
 	import PromptIcon from '$lib/assets/prompt-icon.svelte';
-	import { prompt as inputText, answer } from '../context/prompts';
+	import { prompt as inputText, DEFAULT_PROMPT, getAnswer } from '../context/prompts';
 	import { theme } from '$lib/context/theme';
 	import NextIcon from '$lib/assets/next-icon.svelte';
+	import LoadingSpinner from '$lib/assets/loading-spinner.svelte';
+	import { delay } from '$lib/utils/delay';
+
+	let loading = $state<boolean>(false);
+	let answer = $state<string[]>([]);
 
 	const inputClass = $derived(
 		$theme === 'dark'
@@ -11,21 +16,41 @@
 			: 'w-[50dvw] h-fit rounded-lg bg-accent p-2 text-2xl text-center'
 	);
 
-    const answerClass = $derived(
-        $answer
-            ? 'flex w-full flex-1 flex-col items-start justify-start overflow-auto rounded-lg p-2'
-            : 'flex w-full flex-1 flex-col items-center justify-center overflow-auto rounded-lg p-2'
-    );
+	const answerClass = $derived(
+		answer.length
+			? 'flex w-full flex-1 flex-col items-start justify-start overflow-auto rounded-lg p-2'
+			: 'flex w-full flex-1 flex-col items-center justify-center overflow-auto rounded-lg p-2'
+	);
 
 	const { prompts } = config;
+
+	const onClickSubmit = async () => {
+		loading = true;
+		answer = [];
+
+		const response = await getAnswer($inputText);
+
+		for (let i = 0; i < response.length; i++) {
+			answer.push(response[i]);
+			await delay(Math.random() * 20);
+		}
+
+		loading = false;
+	};
+
+	const disabled = $derived($inputText === DEFAULT_PROMPT);
 </script>
 
-<div class="flex w-full h-[50%] flex-col justify-center items-center gap-2">
-	<div
-		class={answerClass}
-	>
-		{#if $answer}
-			<p class="text-xl">{$answer}</p>
+<div class="flex h-[50%] w-full flex-col items-center justify-center gap-2">
+	<div class={answerClass}>
+		{#if answer.length}
+			<p class="text-xl">
+				{#each answer as part}
+					<span class="animated-text">{part}</span>
+				{/each}
+			</p>
+		{:else if loading}
+			<LoadingSpinner />
 		{:else}
 			<PromptIcon />
 			<p class="text-2xl">{prompts.info}</p>
@@ -33,6 +58,6 @@
 	</div>
 	<div class="flex items-center justify-center gap-2 py-4">
 		<input type="text" bind:value={$inputText} class={inputClass} readonly />
-		<NextIcon />
+		<NextIcon disabled={disabled || loading} onclick={onClickSubmit} className={disabled ? 'w-12 h-12 opacity-50' : 'w-12 h-12'} />
 	</div>
 </div>
