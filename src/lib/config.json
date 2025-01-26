@@ -77,6 +77,22 @@
 			}
 		]
 	},
+	"blog": {
+		"posts": [
+			{
+				"name": "Placeholder",
+				"description": "Placeholder"
+			},
+			{
+				"name": "Placeholder",
+				"description": "Placeholder"
+			},
+			{
+				"name": "Placeholder",
+				"description": "Placeholder"
+			}
+		]
+	},
 	"prompts": {
 		"info": "Select a question from below!",
 		"prompts": [
