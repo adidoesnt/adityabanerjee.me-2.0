@@ -7,6 +7,8 @@
 	import LoadingSpinner from '$lib/assets/loading-spinner.svelte';
 	import { delay } from '$lib/utils/delay';
 
+	$inputText = DEFAULT_PROMPT;
+
 	let loading = $state<boolean>(false);
 	let answer = $state<string[]>([]);
 
@@ -38,7 +40,7 @@
 		loading = false;
 	};
 
-	const disabled = $derived($inputText === DEFAULT_PROMPT);
+	const isDisabled = $derived($inputText === DEFAULT_PROMPT || loading);
 </script>
 
 <div class="flex h-[50%] w-full flex-col items-center justify-center gap-2">
@@ -58,6 +60,10 @@
 	</div>
 	<div class="flex items-center justify-center gap-2 py-4">
 		<input type="text" bind:value={$inputText} class={inputClass} readonly />
-		<NextIcon disabled={disabled || loading} onclick={onClickSubmit} className={disabled ? 'w-12 h-12 opacity-50' : 'w-12 h-12'} />
+		<NextIcon
+			disabled={isDisabled}
+			onclick={onClickSubmit}
+			className={isDisabled ? 'w-12 h-12 opacity-50' : 'w-12 h-12'}
+		/>
 	</div>
 </div>
