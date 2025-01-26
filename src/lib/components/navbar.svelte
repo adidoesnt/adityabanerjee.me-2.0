@@ -6,20 +6,18 @@
 	const pathname = $derived(page.url.pathname);
 </script>
 
-<main>
-	<div id="navbar" class="flex">
-		<ul class="flex items-center justify-between gap-16">
-			{#each navbar.items as item}
-				{#if item.href === pathname}
-					<li>
-						<a href={item.href} class="text-xl font-bold underline bg-transparent">{item.name}</a>
-					</li>
-				{:else}
-					<li>
-						<a href={item.href} class="text-xl font-bold bg-transparent">{item.name}</a>
-					</li>
-				{/if}
-			{/each}
-		</ul>
-	</div>
-</main>
+<div id="navbar" class="flex">
+	<ul class="flex items-center justify-between gap-16">
+		{#each navbar.items as item}
+			{#if item.href === pathname}
+				<li>
+					<a href={item.href} class="bg-transparent text-xl font-bold underline">{item.name}</a>
+				</li>
+			{:else}
+				<li>
+					<a href={item.href} class="bg-transparent text-xl font-bold">{item.name}</a>
+				</li>
+			{/if}
+		{/each}
+	</ul>
+</div>

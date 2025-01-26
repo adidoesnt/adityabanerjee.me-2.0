@@ -6,12 +6,10 @@
 	const { name } = config;
 </script>
 
-<main>
-	<div id="header" class="flex items-center justify-between">
-		<h1 class="text-4xl font-bold">
-			<a href="/">{name}</a>
-		</h1>
-		<Navbar />
-		<DarkModeIcon />
-	</div>
-</main>
+<div id="header" class="flex items-center justify-between">
+	<h1 class="text-4xl font-bold">
+		<a href="/">{name}</a>
+	</h1>
+	<Navbar />
+	<DarkModeIcon />
+</div>
