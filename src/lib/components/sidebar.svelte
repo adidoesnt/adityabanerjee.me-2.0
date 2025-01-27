@@ -1,7 +1,8 @@
 <script lang="ts">
+	import { slide } from 'svelte/transition';
 	import SidebarIcon from '$lib/assets/sidebar-icon.svelte';
 	import { theme } from '$lib/context/theme';
-
+	
 	const sideBarClass = $derived(
 		$theme === 'dark'
 			? 'fixed left-0 flex flex-col items-center gap-8 w-fit min-w-[15dvw] max-w-[25dvw] p-8 h-full bg-primary text-text'
@@ -20,7 +21,7 @@
 />
 
 {#if show}
-	<div id="sidebar" class={sideBarClass}>
+	<div id="sidebar" class={sideBarClass} transition:slide={{ axis: 'x' }}>
 		<h1 class="mt-16 text-4xl underline">{title}</h1>
 		<div id="posts" class="flex flex-col gap-4">
 			{#each items as item}

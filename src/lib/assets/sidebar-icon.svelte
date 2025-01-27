@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { theme } from '$lib/context/theme';
 	let { className = 'w-12 h-12', onclick, disabled = false, show = true } = $props();
+	className = `${className} opacity-50 hover:opacity-100 transition-opacity duration-300`;
 </script>
 
 <button aria-label="Toggle Sidebar" {onclick} {disabled}>
