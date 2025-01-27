@@ -6,38 +6,71 @@
 	let { items } = $props();
 	let currentIndex = $state(0);
 
-    const incrementWithModulus = (index: number, max: number) => {
-        return (index + 1) % max;
-    }
+	const incrementWithModulus = (index: number, max: number) => {
+		return (index + 1) % max;
+	};
 
-    const decrementWithModulus = (index: number, max: number) => {
-        return (index - 1 + max) % max;
-    }
+	const decrementWithModulus = (index: number, max: number) => {
+		return (index - 1 + max) % max;
+	};
 
-    const prevIndex = $derived(decrementWithModulus(currentIndex, items.length));
-    const nextIndex = $derived(incrementWithModulus(currentIndex, items.length));
+	const prevIndex = $derived(decrementWithModulus(currentIndex, items.length));
+	const nextIndex = $derived(incrementWithModulus(currentIndex, items.length));
 
-    const centerItemClass = $derived($theme === 'dark' ? 'item center-item bg-accent text-background' : 'item center-item bg-primary text-text');
-    const leftItemClass = $derived($theme === 'dark' ? 'item side-item left bg-accent text-background' : 'item side-item left bg-primary text-text');
-    const rightItemClass = $derived($theme === 'dark' ? 'item side-item right bg-accent text-background' : 'item side-item right bg-primary text-text');
+	const centerItemClass = $derived(
+		$theme === 'dark'
+			? 'item center-item bg-accent text-background'
+			: 'item center-item bg-primary text-text'
+	);
+	const leftItemClass = $derived(
+		$theme === 'dark'
+			? 'item side-item left bg-accent text-background'
+			: 'item side-item left bg-primary text-text'
+	);
+	const rightItemClass = $derived(
+		$theme === 'dark'
+			? 'item side-item right bg-accent text-background'
+			: 'item side-item right bg-primary text-text'
+	);
 </script>
 
 <div class="carousel-container">
-	<PrevIcon className="w-16 h-16" onclick={() => {
-        currentIndex = prevIndex;
-    }} />
+	<PrevIcon
+		className="w-16 h-16"
+		onclick={() => {
+			currentIndex = prevIndex;
+		}}
+	/>
 	<div class={leftItemClass}>
 		<h1>{items[prevIndex]?.name}</h1>
+		<img
+			class="h-24 w-24 rounded-md"
+			src={items[prevIndex]?.imageSrc}
+			alt={items[prevIndex]?.name}
+		/>
 	</div>
 	<div class={centerItemClass}>
 		<h1>{items[currentIndex]?.name}</h1>
+		<img
+			class="h-32 w-32 rounded-md"
+			src={items[currentIndex]?.imageSrc}
+			alt={items[currentIndex]?.name}
+		/>
 	</div>
 	<div class={rightItemClass}>
 		<h1>{items[nextIndex]?.name}</h1>
+		<img
+			class="h-24 w-24 rounded-md"
+			src={items[nextIndex]?.imageSrc}
+			alt={items[nextIndex]?.name}
+		/>
 	</div>
-	<NextIcon className="w-16 h-16 relative absolute-2" onclick={() => {
-        currentIndex = nextIndex;
-    }} />
+	<NextIcon
+		className="w-16 h-16 relative absolute-2"
+		onclick={() => {
+			currentIndex = nextIndex;
+		}}
+	/>
 </div>
 
 <style>
@@ -50,14 +83,16 @@
 
 	.item {
 		display: flex;
+		flex-direction: column;
+		gap: 1rem;
 		border-radius: 0.375rem;
-        padding: 0.5rem;
+		padding: 0.5rem;
 		justify-content: center;
 		align-items: center;
 
-        h1 {
-            font-size: 1.5rem;
-        }
+		h1 {
+			font-size: 1.5rem;
+		}
 	}
 
 	.side-item {

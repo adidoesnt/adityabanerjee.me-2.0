@@ -5,24 +5,19 @@
 		"message": "I would like to thank:",
 		"items": [
 			{
-				"name": "Strive Education",
-				"href": "https://www.placeholder.com",
-				"imageSrc": "/images/placeholder.png"
+				"name": "Strive Math",
+				"href": "https://www.strivemath.com/",
+				"imageSrc": "/src/lib/assets/strive-math-logo.png"
 			},
 			{
 				"name": "ByondXR",
-				"href": "https://www.placeholder.com",
-				"imageSrc": "/images/placeholder.png"
+				"href": "https://www.byondxr.com/",
+				"imageSrc": "/src/lib/assets/byondxr-logo.png"
 			},
 			{
 				"name": "Activate Interactive",
 				"href": "https://www.placeholder.com",
-				"imageSrc": "/images/placeholder.png"
-			},
-			{
-				"name": "Pencil Battery",
-				"href": "https://www.placeholder.com",
-				"imageSrc": "/images/placeholder.png"
+				"imageSrc": "/src/lib/assets/activate-logo.png"
 			}
 		]
 	},
