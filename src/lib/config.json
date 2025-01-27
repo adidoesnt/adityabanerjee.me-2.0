@@ -142,16 +142,8 @@
 	"blog": {
 		"posts": [
 			{
-				"name": "Placeholder",
-				"description": "Placeholder"
-			},
-			{
-				"name": "Placeholder",
-				"description": "Placeholder"
-			},
-			{
-				"name": "Placeholder",
-				"description": "Placeholder"
+				"name": "So I rebuilt my portfolio site...",
+				"description": "A deep-dive into how and why I rebuilt my portfolio site."
 			}
 		]
 	},
@@ -160,43 +152,83 @@
 		"prompts": [
 			{
 				"question": "🏆 What's your professional background?",
-				"responses": ["placeholder", "placeholder again", "last placeholder I swear"]
+				"responses": [
+					"I am a full-stack developer with 3 years of experience in the JavaScript ecosystem. I am especially well-versed with the PERN (Postgres, Express, React and Node) stack.",
+					"I am a full-stack JavaScript developer with 3 years of experience through my tenures at Strive Math, ByondXR and Activate Interactive. My key strengths include Node.js, Express, React, and Postgres, although I have experience with a wide range of other technologies as well.",
+					"I have 3 years of experience in the JavaScript ecosystem, with a focus on full-stack development. My experience includes working with Strive Math, ByondXR, and Activate Interactive. Through my experience, I have developed a strong understanding of Node.js, Express, React, and Postgres, among many other technologies."
+				]
 			},
 			{
 				"question": "🎓 Where did you study?",
-				"responses": ["placeholder", "placeholder again", "last placeholder I swear"]
+				"responses": [
+					"I studied higher level computer science under the International Baccalaureate Programme at Overseas Family School, Singapore. Subsequently, I completed a Bachelor of Computing (Honours) degree at the National University of Singapore, majoring in Computer Science.",
+					"I completed my International Baccalaureate Diploma at Overseas Family School in Singapore, where I took higher-level computer science. Later, I pursued a Bachelor of Computing (Honours) degree at the National University of Singapore, specializing in Computer Science.",
+					"My academic journey started with an International Baccalaureate Diploma at Overseas Family School in Singapore, where I focused on computer science. I then went on to complete a Bachelor of Computing (Honours) degree in Computer Science at the National University of Singapore."
+				]
 			},
 			{
 				"question": "💼 What are you currently working on?",
-				"responses": ["placeholder", "placeholder again", "last placeholder I swear"]
+				"responses": [
+					"I'm currently improving my understanding of cloud technologies by preparing for and taking on AWS cloud certifications. I'm also strengthening my understanding of Web3 technologies, Solidity and Rust by working on projects that leverage these technologies.",
+					"I'm currently working on improving my expertise in cloud and Web3 technologies, Rust and Solidity. I'm doing this by taking on AWS cloud courses and certifications, and working on projects that leverage these technologies.",
+					"Currently, I'm working on improving my understanding of cloud technologies by preparing for and taking on AWS cloud certifications. I am also strengthening my understanding of Web3 technologies, Solidity and Rust by using these technologies in hands-on projects."
+				]
 			},
 			{
 				"question": "🛠️ What's your favorite tech stack right now?",
-				"responses": ["placeholder", "placeholder again", "last placeholder I swear"]
+				"responses": [
+					"I don't think this is an actual recognised stack name, but I'm really enjoying the BSD (Bun, SvelteKit and Drizzle) stack. The maintainers have put in a lot of effort to enable a seamless developer experience, and I've definitely noticed that.",
+					"I'm currently a big fan of the BSD (Bun, SvelteKit, and Drizzle) stack. It provides an incredibly smooth developer experience, with minimal setup and great performance, making it a joy to work with.",
+					"Lately, I've been loving the BSD stack (Bun, SvelteKit, and Drizzle). The combination makes development feel effortless, and I appreciate how lightweight and intuitive it is compared to other stacks."
+				]
 			},
 			{
 				"question": "🔥 What technologies do you specialise in?",
-				"responses": ["placeholder", "placeholder again", "last placeholder I swear"]
+				"responses": [
+					"I would say I'm particularly experienced with technologies in the JavaScript ecosystem. I'm particularly strong at React, Node.js and Express. I also work well with a wide range of SQL and NoSQL databases! My Python skills aren't too bad either.",
+					"My expertise primarily lies in JavaScript and its ecosystem. I'm highly proficient in React, Node.js, and Express. Additionally, I have experience working with both SQL and NoSQL databases and am comfortable with Python as well.",
+					"I'm well-versed in full-stack JavaScript development, especially with React, Node.js, and Express. I'm also experienced with SQL and NoSQL databases, and while JavaScript is my primary focus, I have a solid grasp of Python too."
+				]
 			},
 			{
 				"question": "🚀 Can you tell me about a cool project you've worked on?",
-				"responses": ["placeholder", "placeholder again", "last placeholder I swear"]
+				"responses": [
+					"In 2024, I created a Telegram Bot called EchoFinder with my friend Vishesh. The bot allowed users to locate old messages that matched their search prompt. It was super interesting because it was my first time working with embeddings models and a vector database!",
+					"In 2023, I established a task management platform called FNSHR. The platform was built using NextJS and MongoDB, and was integrated with Stripe to handle payments. It was pretty stressful because I was building it for a pitch competition, but I was super proud that I was able to put it together in just a couple of days.",
+					"In 2024, I started working on holistic fitness and wellness platform called Beings of Habit with my girlfriend Ishita. The project is still a work in progress, and we're aiming to release it this year. I've enjoyed working on it a lot because it has served as a great opportunity to refresh my knowledge of NextJS, and gain hands-on experience using cloud and IaC technologies such as AWS and Terraform."
+				]
 			},
 			{
 				"question": "🎯 What's your portfolio site built with?",
-				"responses": ["placeholder", "placeholder again", "last placeholder I swear"]
+				"responses": [
+					"My old portfolio site was built with Astro, React and TailwindCSS. My new portfolio site (this one) was built with SvelteKit, DrizzleORM and Tailwind CSS. I've enjoyed working with SvelteKit a lot because there's a lot less boilerplate as opposed to React or NextJS, and I feel that runes and writables are much easier to work with than hooks and contexts. Additionally, the SvelteKit team has crafted a beautiful and intuitive developer experience, and I'm really excited to see what they build in the future!",
+					"My previous portfolio was built using Astro, React, and TailwindCSS. However, for this iteration, I switched to SvelteKit, DrizzleORM, and Tailwind CSS. I love the simplicity of SvelteKit, especially how Svelte reduces boilerplate compared to React, and the ecosystem feels polished and intuitive.",
+					"I initially built my portfolio with Astro and React but later migrated to SvelteKit, DrizzleORM, and TailwindCSS. The developer experience with SvelteKit is fantastic, and I really appreciate how straightforward and minimalistic Svelte feels compared to React."
+				]
 			},
 			{
 				"question": "🎮 What do you do outside of coding?",
-				"responses": ["placeholder", "placeholder again", "last placeholder I swear"]
+				"responses": [
+					"Outside of coding, I like to watch movies and TV shows, spend time with my family, girlfriend and friends, cook, eat and exercise!",
+					"When I'm not coding, I enjoy watching movies, spending time with my family and friends, cooking, and working out. I also love discovering new restaurants and trying different cuisines.",
+					"Beyond coding, I like to unwind by watching TV shows and movies, hanging out with my loved ones, experimenting with new recipes in the kitchen, and staying active through exercise."
+				]
 			},
 			{
-				"question": "📖 Any favourite books or blogs on tech?",
-				"responses": ["placeholder", "placeholder again", "last placeholder I swear"]
+				"question": "📖 Where do you get your favourite tech content?",
+				"responses": [
+					"I've been an avid follower of Fireship, the Primagen, Theo (from t3.gg), and Web Dev Simplified for a few years now, and I watch their content regularly. I also recently subscribed to daily.dev, which is a great website that aggregates a lot of the content that I'm interested in. Lastly, I follow a lot of tech-related subreddits.",
+					"I regularly watch content from Fireship, the Primagen, Theo (t3.gg), and Web Dev Simplified. I also use daily.dev to keep up with the latest articles and follow various tech subreddits for discussions and insights.",
+					"My go-to sources for tech content are Fireship, the Primagen, Theo (t3.gg), and Web Dev Simplified. I also stay updated through daily.dev and engage with discussions on tech-focused subreddits."
+				]
 			},
 			{
 				"question": "🌍 Why did you move to London?",
-				"responses": ["placeholder", "placeholder again", "last placeholder I swear"]
+				"responses": [
+					"I moved to London because I've lived in Singapore for most of my life, and wanted to gain some exposure overseas. Graduating from NUS made me eligible for the UK's High Potential Individual (HPI) visa, which made relocating to the UK a viable option.",
+					"I wanted to experience living and working in a new environment after spending most of my life in Singapore. Thanks to my NUS degree, I qualified for the UK's High Potential Individual (HPI) visa, making London an exciting and feasible choice.",
+					"Having spent most of my life in Singapore, I wanted to explore new opportunities abroad. The UK's HPI visa, which I became eligible for through my NUS degree, provided a great pathway to move to London."
+				]
 			}
 		]
 	},
