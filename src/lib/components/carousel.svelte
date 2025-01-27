@@ -91,7 +91,7 @@
 		align-items: center;
 
 		h1 {
-			font-size: 1.5rem;
+			font-size: 1rem;
 		}
 	}
 
