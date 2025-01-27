@@ -77,6 +77,48 @@
 			}
 		]
 	},
+	"timeline": [
+		{
+			"name": "Placeholder",
+			"date": "Dec 1999",
+			"description": "Placeholder"
+		},
+		{
+			"name": "Placeholder",
+			"date": "Dec 1999",
+			"description": "Placeholder"
+		},
+		{
+			"name": "Placeholder",
+			"date": "Dec 1999",
+			"description": "Placeholder"
+		},
+		{
+			"name": "Placeholder",
+			"date": "Dec 1999",
+			"description": "Placeholder"
+		},
+		{
+			"name": "Placeholder",
+			"date": "Dec 1999",
+			"description": "Placeholder"
+		},
+		{
+			"name": "Placeholder",
+			"date": "Dec 1999",
+			"description": "Placeholder"
+		},
+		{
+			"name": "Placeholder",
+			"date": "Dec 1999",
+			"description": "Placeholder"
+		},
+		{
+			"name": "Placeholder",
+			"date": "Dec 1999",
+			"description": "Placeholder"
+		}
+	],
 	"blog": {
 		"posts": [
 			{

@@ -12,7 +12,7 @@
 	);
 </script>
 
-<div class="flex flex-wrap items-center justify-center gap-2">
+<div class="flex flex-wrap items-center justify-center gap-2 overflow-auto">
 	{#each prompts.prompts as prompt}
 		<button
 			class={buttonClass}

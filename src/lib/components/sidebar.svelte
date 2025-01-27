@@ -23,7 +23,7 @@
 {#if show}
 	<div id="sidebar" class={sideBarClass} transition:slide={{ axis: 'x' }}>
 		<h1 class="mt-16 text-4xl underline">{title}</h1>
-		<div id="posts" class="flex flex-col gap-4">
+		<div id="posts" class="flex flex-col gap-4 overflow-auto">
 			{#each items as item}
 				<div class="flex flex-col gap-2">
 					<h1 class="text-xl">{item.name}</h1>
