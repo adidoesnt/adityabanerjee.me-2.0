@@ -3,7 +3,7 @@
 	import { theme } from '$lib/context/theme';
 
 	const cardClass = $derived(
-		$theme === 'dark' ? 'bg-accent text-background rounded-md' : 'bg-primary text-text rounded-md'
+		$theme === 'dark' ? 'py-4 px-8 bg-accent text-background rounded-md' : 'py-4 px-8 bg-primary text-text rounded-md'
 	);
 
 	const timelineClass = $derived(
@@ -24,14 +24,14 @@
 				</div>
 				<div class="flex w-full flex-col items-center justify-center">
 					<div class={`z-0 flex h-[45%] w-2 opacity-50 ${timelineClass}`}></div>
-					<div class={`flex aspect-square h-[15%] rounded-full ${timelineClass}`}></div>
+					<div class={`flex aspect-square h-6 rounded-full ${timelineClass}`}></div>
 					<div class={`z-0 flex h-[45%] w-2 opacity-50 ${timelineClass}`}></div>
 				</div>
 				<div
-					class={`flex min-h-[20dvh] w-[30dvh] items-center justify-start justify-self-start ${cardClass}`}
+					class={`flex gap-2 min-h-[20dvh] w-[30dvh] items-center justify-start justify-self-start ${cardClass}`}
 				>
 					<div class="flex h-full w-full flex-col items-center justify-center">
-						<h1 class="text-xl">{item.name}</h1>
+						<h1 class="text-xl text-center underline">{item.name}</h1>
 						<p>{item.description}</p>
 					</div>
 				</div>
@@ -39,14 +39,14 @@
 				<div
 					class={`flex min-h-[20dvh] w-[30dvh] items-center justify-end justify-self-end ${cardClass}`}
 				>
-					<div class="flex h-full w-full flex-col items-center justify-center">
-						<h1 class="text-xl">{item.name}</h1>
+					<div class="flex gap-2 h-full w-full flex-col items-center justify-center">
+						<h1 class="text-xl text-center underline">{item.name}</h1>
 						<p>{item.description}</p>
 					</div>
 				</div>
 				<div class="flex w-full flex-col items-center justify-center">
 					<div class={`z-0 flex h-[45%] w-2 opacity-50 ${timelineClass}`}></div>
-					<div class={`flex aspect-square h-[15%] rounded-full ${timelineClass}`}></div>
+					<div class={`flex aspect-square h-6 rounded-full ${timelineClass}`}></div>
 					<div class={`z-0 flex h-[45%] w-2 opacity-50 ${timelineClass}`}></div>
 				</div>
 				<div class="flex min-h-[20dvh] w-[30dvh] items-center justify-start justify-self-start">

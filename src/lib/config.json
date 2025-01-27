@@ -84,44 +84,59 @@
 	},
 	"timeline": [
 		{
-			"name": "Placeholder",
-			"date": "Dec 1999",
-			"description": "Placeholder"
+			"name": "📚 OFS",
+			"date": "Aug 2015",
+			"description": "Took computer science at the higher level under the international baccalaureate program at the Overseas Family School, Singapore."
 		},
 		{
-			"name": "Placeholder",
-			"date": "Dec 1999",
-			"description": "Placeholder"
+			"name": "🇸🇬 SAF",
+			"date": "Jul 2017",
+			"description": "Served national service in the Singapore Armed Forces."
 		},
 		{
-			"name": "Placeholder",
-			"date": "Dec 1999",
-			"description": "Placeholder"
+			"name": "🎓 NUS",
+			"date": "Aug 2019",
+			"description": "Enrolled in the Bachelor of Computing Program at the National University of Singapore, majoring in Computer Science."
 		},
 		{
-			"name": "Placeholder",
-			"date": "Dec 1999",
-			"description": "Placeholder"
+			"name": "🧮 Strive Math",
+			"date": "May 2020",
+			"description": "Started my first software engineering internship with Strive Math (YC21)."
 		},
 		{
-			"name": "Placeholder",
-			"date": "Dec 1999",
-			"description": "Placeholder"
+			"name": "👨🏽‍🏫 OURFinals",
+			"date": "Dec 2020",
+			"description": "Established an ad-hoc on-demand peer tutoring platform for university students. Conducted a Python coding bootcamp with the team."
 		},
 		{
-			"name": "Placeholder",
-			"date": "Dec 1999",
-			"description": "Placeholder"
+			"name": "🏫 NOC",
+			"date": "Aug 2021",
+			"description": "Enrolled in the NUS Overseas Colleges (NOC) Programme."
 		},
 		{
-			"name": "Placeholder",
-			"date": "Dec 1999",
-			"description": "Placeholder"
+			"name": "💻 ByondXR",
+			"date": "Jan 2022",
+			"description": "Started an internship with ByondXR as frontend developer."
 		},
 		{
-			"name": "Placeholder",
-			"date": "Dec 1999",
-			"description": "Placeholder"
+			"name": "⚡️ FNSHR",
+			"date": "Mar 2023",
+			"description": "Established FNSHR, a task management platform that leveraged social and monetary accountibility to incentivise task completion."
+		},
+		{
+			"name": "👨🏽‍🎓 Graduation",
+			"date": "Jul 2023",
+			"description": "Graduated from NUS with a Bachelor of Computing (Honours) degree in Computer Science."
+		},
+		{
+			"name": "👔 Activate Interactive",
+			"date": "Aug 2023",
+			"description": "Began my first full-time job as a full-stack developer at Activate Interactive."
+		},
+		{
+			"name": "🇬🇧 London",
+			"date": "Feb 2025",
+			"description": "Moved to London to pursue my career goals."
 		}
 	],
 	"blog": {
