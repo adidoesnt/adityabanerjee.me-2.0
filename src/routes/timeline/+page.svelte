@@ -6,8 +6,8 @@
 
 	const cardClass = $derived(
 		$theme === 'dark'
-			? 'py-4 px-8 bg-beige text-darkBrown rounded-md'
-			: 'py-4 px-8 bg-brown text-cream rounded-md'
+			? 'py-4 px-8 bg-brown text-cream rounded-md'
+			: 'py-4 px-8 bg-beige text-brown rounded-md'
 	);
 
 	const timelineClass = $derived($theme === 'dark' ? 'bg-beige' : 'bg-brown');
