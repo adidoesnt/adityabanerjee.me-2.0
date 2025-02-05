@@ -5,7 +5,7 @@
 	const { navbar } = config;
 	const pathname = $derived(page.url.pathname);
 
-	const { hamburgerMenu = false } = $props();
+	const { hamburgerMenu = false, closeHamburgerMenu = null } = $props();
 </script>
 
 <div id="navbar" class={`${hamburgerMenu ? 'flex flex-col' : 'hidden'} lg:flex`}>
@@ -16,7 +16,8 @@
 			<li>
 				<a
 					href="/"
-					class={`bg-transparent text-xl font-bold ${pathname === '/' ? 'underline' : ''}`}>Home</a
+					class={`bg-transparent text-xl font-bold ${pathname === '/' ? 'underline' : ''}`}
+					onclick={closeHamburgerMenu}>Home</a
 				>
 			</li>
 		{/if}
@@ -24,11 +25,17 @@
 		{#each navbar.items as item}
 			{#if item.href === pathname}
 				<li>
-					<a href={item.href} class="bg-transparent text-xl font-bold underline">{item.name}</a>
+					<a
+						href={item.href}
+						class="bg-transparent text-xl font-bold underline"
+						onclick={closeHamburgerMenu}>{item.name}</a
+					>
 				</li>
 			{:else}
 				<li>
-					<a href={item.href} class="bg-transparent text-xl font-bold">{item.name}</a>
+					<a href={item.href} class="bg-transparent text-xl font-bold" onclick={closeHamburgerMenu}
+						>{item.name}</a
+					>
 				</li>
 			{/if}
 		{/each}
