@@ -3,13 +3,13 @@
 
 	const className = $derived(
 		$theme === 'dark'
-			? 'rounded-full border-cream border-2 border-solid w-96 h-96'
-			: 'rounded-full border-darkBrown border-2 border-solid w-96 h-96'
+			? 'border-cream'
+			: 'border-darkBrown'
 	);
 </script>
 
 <svg
-	class={className}
+	class={`rounded-full border-2 border-solid md:w-60 md:h-w-60 lg:w-96 lg:h-96 ${className}`}
 	viewBox="0 0 302 302"
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"

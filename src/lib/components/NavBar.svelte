@@ -4,10 +4,12 @@
 
 	const { navbar } = config;
 	const pathname = $derived(page.url.pathname);
+
+	const { hamburgerMenu = false } = $props();
 </script>
 
-<div id="navbar" class="flex">
-	<ul class="flex items-center justify-between gap-16">
+<div id="navbar" class={`${hamburgerMenu ? "flex flex-col" : "hidden"} lg:flex`}>
+	<ul class={`${hamburgerMenu ? "flex flex-col gap-4" : "flex gap-16"} items-center justify-between`}>
 		{#each navbar.items as item}
 			{#if item.href === pathname}
 				<li>

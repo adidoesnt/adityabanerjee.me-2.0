@@ -14,7 +14,7 @@
 </script>
 
 <main>
-	<div id="main-container" class={`grid-rows-[10%,80%,10%] m-0 px-16 py-8 grid w-[100dvw] h-[100dvh] ${className}`}>
+	<div id="main-container" class={`grid-rows-[10%,80%,10%] m-0 px-8 md:px-16 py-8 grid w-[100dvw] h-[100dvh] ${className}`}>
 		<Header />
 		<div class="flex h-full w-full flex-col items-center justify-center overflow-hidden">
 			{@render children()}

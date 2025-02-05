@@ -23,6 +23,9 @@ export default {
 				glow: '0 0 15px #D9C2A3', // Soft beige glow
 				strong: '0 0 25px #D9C2A3', // Stronger glow
 				neon: '0 0 15px #ffcc00' // Neon yellow glow
+			},
+			screens: {
+				md: '667px'
 			}
 		}
 	},

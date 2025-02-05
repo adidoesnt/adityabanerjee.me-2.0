@@ -5,9 +5,10 @@
 	const onclick = () => {
 		theme.set($theme === 'dark' ? 'light' : 'dark');
 	};
+	const { hamburgerMenu = false } = $props();
 </script>
 
-<button aria-label="Toggle Dark Mode" class="flex items-center justify-center" {onclick}>
+<button aria-label="Toggle Dark Mode" class={`${hamburgerMenu ? "flex" : "hidden"} lg:flex items-center justify-center}`} {onclick}>
 	{#if $theme === 'dark'}
 		<svg fill="#f7e4d2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" class={className}>
 			<path

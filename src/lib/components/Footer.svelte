@@ -6,7 +6,7 @@
 	import FacebookLogo from '$lib/assets/facebook-logo.svelte';
 </script>
 
-<div id="footer" class="flex items-center px-16">
+<div id="footer" class="flex items-center md:px-16">
 	<ul class="flex w-full items-center justify-between gap-4">
 		<li><GithubLogo /></li>
 		<li><LinkedinLogo /></li>
