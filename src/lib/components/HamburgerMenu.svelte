@@ -17,7 +17,7 @@
 		id="hamburger-menu"
 		class="fixed left-0 top-0 flex h-full w-full flex-col items-center justify-center backdrop-blur-3xl"
 	>
-		<div class="fixed right-0 top-0 p-8">
+		<div class="fixed left-0 top-0 p-8">
 			<DarkModeIcon hamburgerMenu={true} />
 		</div>
 
