@@ -14,8 +14,8 @@
 
 	const inputClass = $derived(
 		$theme === 'dark'
-			? 'w-[50dvw] h-fit rounded-lg bg-brown md:p-2 text-2xl text-center'
-			: 'w-[50dvw] h-fit rounded-lg bg-beige md:p-2 text-2xl text-center'
+			? 'md:w-[50dvw] h-fit rounded-lg bg-brown md:p-2 text-2xl text-center'
+			: 'md:w-[50dvw] h-fit rounded-lg bg-beige md:p-2 text-2xl text-center'
 	);
 
 	const answerClass = $derived(
@@ -58,7 +58,7 @@
 			<p class="text-2xl">{prompts.info}</p>
 		{/if}
 	</div>
-	<div class="flex items-center justify-center gap-2 md:py-4">
+	<div class="flex md:w-fit w-full items-center justify-center gap-2 md:py-4">
 		<input type="text" bind:value={$inputText} class={inputClass} readonly />
 		<NextIcon
 			disabled={isDisabled}

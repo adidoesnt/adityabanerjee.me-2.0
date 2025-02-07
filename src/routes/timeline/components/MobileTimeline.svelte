@@ -2,11 +2,11 @@
 	const { timeline, cardClass, timelineClass } = $props();
 </script>
 
-<div class="m-4 grid w-full grid-cols-[25%,75%] justify-center md:hidden">
+<div class="m-4 grid w-full grid-cols-[10%,auto] justify-center md:hidden gap-x-4">
 	{#each timeline as item}
-		<div class="flex w-full flex-col items-center justify-center">
+		<div class="flex w-full flex-col items-start justify-center">
 			<div class={`z-0 flex h-[45%] w-2 opacity-50 ${timelineClass}`}></div>
-			<div class={`flex aspect-square h-6 rounded-full ${timelineClass}`}></div>
+			<div class={`flex -translate-x-2 aspect-square h-6 rounded-full ${timelineClass}`}></div>
 			<div class={`z-0 flex h-[45%] w-2 opacity-50 ${timelineClass}`}></div>
 		</div>
 		<div
@@ -14,8 +14,8 @@
 		>
 			<div class="flex h-full w-full flex-col items-center justify-center gap-y-2">
                 <div class="flex w-full justify-between items-center">
-                    <h1 class="text-center text-xl underline">{item.name}</h1>
-                    <p class="text-center text-sm">{item.date}</p>
+                    <h1 class="text-left text-xl underline">{item.name}</h1>
+                    <p class="text-right text-sm">{item.date}</p>
                 </div>
 				<p>{item.description}</p>
 			</div>
