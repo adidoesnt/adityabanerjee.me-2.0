@@ -8,7 +8,7 @@
 	const { hamburgerMenu = false, closeHamburgerMenu = null } = $props();
 </script>
 
-<div id="navbar" class={`${hamburgerMenu ? 'flex flex-col' : 'hidden'} lg:flex`}>
+<div id="navbar" class={`${hamburgerMenu ? 'flex flex-col max-h-[50dvh] overflow-auto' : 'hidden'} lg:flex`}>
 	<ul
 		class={`${hamburgerMenu ? 'flex flex-col gap-4' : 'flex gap-16'} items-center justify-between`}
 	>
