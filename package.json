@@ -43,6 +43,7 @@
 	},
 	"dependencies": {
 		"drizzle-orm": "^0.38.4",
-		"postgres": "^3.4.5"
+		"postgres": "^3.4.5",
+		"svelte-gestures": "^5.1.3"
 	}
 }

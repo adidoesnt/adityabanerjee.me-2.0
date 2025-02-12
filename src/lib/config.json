@@ -3,6 +3,7 @@
 	"headline": ["Part developer, part musician.", "JavaScript is my poison of choice."],
 	"acknowledgements": {
 		"message": "I would like to thank:",
+		"tooltip": "Swipe to navigate!",
 		"items": [
 			{
 				"name": "My team at Strive Math",
