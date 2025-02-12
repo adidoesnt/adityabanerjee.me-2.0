@@ -1,38 +1,38 @@
-# sv
+# adityabanerjee.me
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+## Overview
 
-## Creating a project
+This is the new version of my personal website, built with SvelteKit and DrizzleORM.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Design
 
-```bash
-# create a new project in the current directory
-npx sv create
+The Figma design for the website can be seen below:
 
-# create a new project in my-app
-npx sv create my-app
-```
+![Design](/static/figma.svg)
 
-## Developing
+Alternatively, you can view the design in Figma [here](https://www.figma.com/design/eWuHhbiW1oJZITC2U2gQyv/New-Portfolio-Site-Design?node-id=0-1&t=NHXDb6ojz7Ztvqwh-1).
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Roadmap
 
-```bash
-npm run dev
+### Version 1.0
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+- [x] Complete landing page
+- [x] Complete about page
+- [x] Complete timeline page
+- [ ] Complete projects page
+- [x] Complete acknowledgements page
 
-## Building
+### Version 1.1
 
-To create a production version of your app:
+- [ ] Add blog page
+- [ ] Add timeline item modals
+- [ ] Add projects item modals
 
-```bash
-npm run build
-```
+### Version 1.2
 
-You can preview the production build with `npm run preview`.
+- [ ] Add admin dashboard
+- [ ] Add content management system
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+### Version 2.0
+
+- [ ] Replace about page prompt answers with RAG based response

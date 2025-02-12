@@ -253,10 +253,6 @@
 				"href": "/projects"
 			},
 			{
-				"name": "Blog",
-				"href": "/blog"
-			},
-			{
 				"name": "Acknowledgements",
 				"href": "/acknowledgements"
 			}
