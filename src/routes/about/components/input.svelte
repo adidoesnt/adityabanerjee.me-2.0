@@ -14,8 +14,8 @@
 
 	const inputClass = $derived(
 		$theme === 'dark'
-			? 'md:w-[50dvw] h-fit rounded-lg bg-brown md:p-2 text-2xl text-center'
-			: 'md:w-[50dvw] h-fit rounded-lg bg-beige md:p-2 text-2xl text-center'
+			? 'md:w-[50dvw] w-[75%] h-fit rounded-lg bg-brown md:p-2 text-2xl text-center'
+			: 'md:w-[50dvw] w-[75%] h-fit rounded-lg bg-beige md:p-2 text-2xl text-center'
 	);
 
 	const answerClass = $derived(
