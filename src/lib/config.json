@@ -33,21 +33,29 @@
 		]
 	},
 	"projects": {
+		"tooltips": {
+			"carousel": "Swipe to navigate!",
+			"allProjects": "Click on a project's title to view its GitHub page."
+		},
+		"fallbackDescription": "This project does not have a description.",
 		"featured": [
 			{
 				"name": "Beings of Habit",
-				"href": "https://www.placeholder.com",
-				"imageSrc": "/images/placeholder.png"
+				"githubName": "beingsofhabit",
+				"href": "https://github.com/adidoesnt/beingsofhabit",
+				"imageSrc": "/src/lib/assets/boh-logo.svg"
 			},
 			{
 				"name": "EchoFinder",
-				"href": "https://www.placeholder.com",
-				"imageSrc": "/images/placeholder.png"
+				"githubName": "echofinder",
+				"href": "https://github.com/adidoesnt/echofinder",
+				"imageSrc": "/src/lib/assets/ef-logo.svg"
 			},
 			{
 				"name": "TeleDr",
-				"href": "https://www.placeholder.com",
-				"imageSrc": "/images/placeholder.png"
+				"githubName": "teledr",
+				"href": "https://github.com/adidoesnt/teledr",
+				"imageSrc": "/src/lib/assets/teledr-logo.svg"
 			}
 		],
 		"other": [
