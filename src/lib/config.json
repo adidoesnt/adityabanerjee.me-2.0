@@ -8,27 +8,27 @@
 			{
 				"name": "My team at Strive Math",
 				"href": "https://www.strivemath.com/",
-				"imageSrc": "/src/lib/assets/strive-math-logo.png"
+				"imageSrc": "/strive-math-logo.png"
 			},
 			{
 				"name": "My team at ByondXR",
 				"href": "https://www.byondxr.com/",
-				"imageSrc": "/src/lib/assets/byondxr-logo.png"
+				"imageSrc": "/byondxr-logo.png"
 			},
 			{
 				"name": "My team at Activate Interactive",
 				"href": "https://www.placeholder.com",
-				"imageSrc": "/src/lib/assets/activate-logo.png"
+				"imageSrc": "/activate-logo.png"
 			},
 			{
 				"name": "The maintainers of Bun",
 				"href": "https://bun.sh/",
-				"imageSrc": "/src/lib/assets/bun-logo.png"
+				"imageSrc": "/bun-logo.png"
 			},
 			{
 				"name": "The maintainers of Svelte",
 				"href": "https://svelte.dev/",
-				"imageSrc": "/src/lib/assets/svelte-logo.png"
+				"imageSrc": "/svelte-logo.png"
 			}
 		]
 	},
@@ -43,19 +43,19 @@
 				"name": "Beings of Habit",
 				"githubName": "beingsofhabit",
 				"href": "https://github.com/adidoesnt/beingsofhabit",
-				"imageSrc": "/src/lib/assets/boh-logo.svg"
+				"imageSrc": "/boh-logo.svg"
 			},
 			{
 				"name": "EchoFinder",
 				"githubName": "echofinder",
 				"href": "https://github.com/adidoesnt/echofinder",
-				"imageSrc": "/src/lib/assets/ef-logo.svg"
+				"imageSrc": "/ef-logo.svg"
 			},
 			{
 				"name": "TeleDr",
 				"githubName": "teledr",
 				"href": "https://github.com/adidoesnt/teledr",
-				"imageSrc": "/src/lib/assets/teledr-logo.svg"
+				"imageSrc": "/teledr-logo.svg"
 			}
 		],
 		"other": [
