@@ -5,7 +5,7 @@
 </script>
 
 <div class="flex h-full w-full flex-col items-center justify-center gap-2 overflow-auto">
-	<h1 class="text-lg md:text-2xl lg:text-4xl">{acknowledgements.message}</h1>
+	<h1 class="text-lg md:text-2xl lg:text-3xl">{acknowledgements.message}</h1>
 	<DesktopCarousel items={acknowledgements.items} />
 	<MobileCarousel items={acknowledgements.items} />
 	<p class="block text-center md:hidden opacity-50">
