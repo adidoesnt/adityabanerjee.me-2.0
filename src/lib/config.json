@@ -49,7 +49,7 @@
 					"Being of Habit is a holistic health and wellness platform that aims to explore 3 central pillars of life: fitness, nutrition and well-being. It was conceptualised by girlfriend Ishita, aiming to explore the latest in the health and wellness space, drawing inspiration from evidence-based podcasts, books, publications, social media and more.",
 					"The platform was originally created using SquareSpace, which lacks the flexibility that Ishita wanted. As a result, we started rebuilding the platform using NextJS and TailwindCSS. Additionally, we created a simple CMS (Content Management System) to allow the website's blog section to be managed easily.",
 					"I also took this project as a learning opportunity; I explored potential technology stacks and analysed them to choose what I felt would be the best fit for the project. I also gained hands-on experience with the AWS and Terraform, which I used to deploy our custom CMS.",
-					"This project is currently in progress, but the GitHub respoitory can be found <a class=\"underline hover:opacity-50\" href='https://github.com/adidoesnt/beingsofhabit' target='_blank'>here</a>."
+					"This project is currently in progress, but the GitHub repository can be found <a class=\"underline hover:opacity-50\" href='https://github.com/adidoesnt/beingsofhabit' target='_blank'>here</a>."
 				]
 			},
 			{
@@ -112,62 +112,101 @@
 		{
 			"name": "📚 OFS",
 			"date": "Aug 2015",
-			"description": "Took computer science at the higher level under the international baccalaureate program at the Overseas Family School, Singapore."
+			"description": "Took computer science at the higher level under the international baccalaureate program at the Overseas Family School, Singapore.",
+			"imageHref": null,
+			"longDescription": [
+				"I started the International Baccalaureate Programme at the Overseas Family School in Singapore in August 2015.",
+				"My subjects included Computer Science, Economics and Theatre at the higher level, and French, Mathematics and English Language at the lower level.",
+				"Outside of academics, I was also heavily involved in the school's cultural and sporting activities, including theatre productions, music concerts, cricket matches.",
+				"Having gained a strong theoretical knowledge of computer science and hands-on experience with Java programming, I decided to pursue undergraduate studies in Computer Science."
+			]
 		},
 		{
 			"name": "🇸🇬 SAF",
 			"date": "Jul 2017",
-			"description": "Served national service in the Singapore Armed Forces as a 3rd sergeant at the 42nd Singapore Armoured Regiment."
+			"description": "Served national service in the Singapore Armed Forces as a 3rd sergeant at the 42nd Singapore Armoured Regiment.",
+			"imageHref": null,
+			"longDescription": [
+				"I enlisted in the Singapore Armed Forces in July 2017. I started my service as a recruit in 1st Company, Basic Military Training Centre School 4 in Pulau Tekong.",
+				"On the merit of my performance in BMT (Basic Military Training). I was selected to attend the Specialist Cadet School (SCS) at Pasir Laba Camp to train to become a 3rd Sergeant. The first portion of SCS training was completed in Pasir Laba camp, and the second portion was conducted at the Armour Training Institute (ATI) at Sungei Gedong camp. At ATI, I was trained to be a 3rd sergeant in the Singapore Armed Forces' Armour vocation.",
+				"Upon completion of my training at ATI, I was sent to train in Germany for a month under exercise Panzer Strike. Upon my return, I was posted to the 42nd Singapore Armoured Regiment, where I served as a 3rd sergeant.",
+				"During my time in the SAF, I was known for maintaining an extremely high level of fitness, consistently scoring above 90 in fitness tests graded out of 100."
+			]
 		},
 		{
 			"name": "🎓 NUS",
 			"date": "Aug 2019",
-			"description": "Enrolled in the Bachelor of Computing Program at the National University of Singapore, majoring in Computer Science."
+			"description": "Enrolled in the Bachelor of Computing Program at the National University of Singapore, majoring in Computer Science.",
+			"imageHref": null,
+			"longDescription": [
+				"In August 2019, I enrolled in the Bachelor of Computing Program at the National University of Singapore, majoring in Computer Science.",
+				"I was also able to secure a stay at Residential College 4 (RC4) for the first 2 years of my study, a coveted residence for students that pass the interview process.",
+				"During my time at NUS, I was able to take part in various extracurricular activities. I was a member of Amplified, a student-led collection of rock bands where I performed as a vocalist and drummer. I also co-captained RC4's Dodgeball team for semester, finishing as a runner-up at inter-college games. I was also the publicity head for RC4's Musical Expression Club, and a member of the RC4 Road Relay team.",
+				"Due to my warm and outgoing personality, I was selected as an orientation group leader (OGL) for 2 successive years, helping 2 new batches of students find their feet in NUS and at RC4."
+			]
 		},
 		{
 			"name": "🧮 Strive Math",
 			"date": "May 2020",
-			"description": "Started my first software engineering internship with Strive Math (YC21)."
+			"description": "Started my first software engineering internship with Strive Math (YC21).",
+			"imageHref": null,
+			"longDescription": []
 		},
 		{
 			"name": "👨🏽‍🏫 OURFinals",
 			"date": "Dec 2020",
-			"description": "Established an ad-hoc on-demand peer tutoring platform for university students. Conducted a Python coding bootcamp with the team."
+			"description": "Established an ad-hoc on-demand peer tutoring platform for university students. Conducted a Python coding bootcamp with the team.",
+			"imageHref": null,
+			"longDescription": []
 		},
 		{
 			"name": "🏫 NOC",
 			"date": "Aug 2021",
-			"description": "Enrolled in the NUS Overseas Colleges (NOC) Programme."
+			"description": "Enrolled in the NUS Overseas Colleges (NOC) Programme.",
+			"imageHref": null,
+			"longDescription": []
 		},
 		{
 			"name": "💻 ByondXR",
 			"date": "Jan 2022",
-			"description": "Started an internship with ByondXR as frontend developer."
+			"description": "Started an internship with ByondXR as frontend developer.",
+			"imageHref": null,
+			"longDescription": []
 		},
 		{
 			"name": "⚡️ FNSHR",
 			"date": "Mar 2023",
-			"description": "Established FNSHR, a task management platform that leveraged social and monetary accountibility to incentivise task completion."
+			"description": "Established FNSHR, a task management platform that leveraged social and monetary accountability to incentivise task completion.",
+			"imageHref": null,
+			"longDescription": []
 		},
 		{
 			"name": "👨🏽‍🎓 Graduation",
 			"date": "Jul 2023",
-			"description": "Graduated from NUS with a Bachelor of Computing (Honours) degree in Computer Science."
+			"description": "Graduated from NUS with a Bachelor of Computing (Honours) degree in Computer Science.",
+			"imageHref": null,
+			"longDescription": []
 		},
 		{
 			"name": "👔 Activate Interactive",
 			"date": "Aug 2023",
-			"description": "Began my first full-time job as a full-stack developer at Activate Interactive."
+			"description": "Began my first full-time job as a full-stack developer at Activate Interactive.",
+			"imageHref": null,
+			"longDescription": []
 		},
 		{
 			"name": "🤖 AI Practitioner",
 			"date": "Feb 2025",
-			"description": "Completed the AWS Certified AI Practitioner exam."
+			"description": "Completed the AWS Certified AI Practitioner exam.",
+			"imageHref": null,
+			"longDescription": []
 		},
 		{
 			"name": "🇬🇧 London",
 			"date": "Feb 2025",
-			"description": "Moved to London to pursue my career goals."
+			"description": "Moved to London to pursue my career goals.",
+			"imageHref": null,
+			"longDescription": []
 		}
 	],
 	"blog": {
