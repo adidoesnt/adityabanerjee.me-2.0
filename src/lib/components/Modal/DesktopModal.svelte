@@ -16,7 +16,7 @@
 	>
 		<div
 			id="modal-container"
-			class={`flex h-fit w-fit min-w-[25dvw] max-w-[50dvw] flex-col items-center justify-center gap-4 rounded-md p-4 text-left ${backgroundClass}`}
+			class={`flex h-fit w-fit min-w-[25dvw] max-w-[50dvw] flex-col items-center justify-start gap-4 rounded-md p-4 text-left ${backgroundClass} max-h-[85dvh] overflow-auto`}
 		>
 			<div class="flex w-full items-center justify-end">
 				<button class="flex" onclick={toggle} aria-label="Close Modal">

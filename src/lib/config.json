@@ -45,7 +45,12 @@
 				"githubName": "beingsofhabit",
 				"href": "https://github.com/adidoesnt/beingsofhabit",
 				"imageSrc": "/boh-logo.svg",
-				"longDescription": ["Being of Habit is a holistic health, fitness and wellness platform."]
+				"longDescription": [
+					"Being of Habit is a holistic health and wellness platform that aims to explore 3 central pillars of life: fitness, nutrition and well-being. It was conceptualised by girlfriend Ishita, aiming to explore the latest in the health and wellness space, drawing inspiration from evidence-based podcasts, books, publications, social media and more.",
+					"The platform was originally created using SquareSpace, which lacks the flexibility that Ishita wanted. As a result, we started rebuilding the platform using NextJS and TailwindCSS. Additionally, we created a simple CMS (Content Management System) to allow the website's blog section to be managed easily.",
+					"I also took this project as a learning opportunity; I explored potential technology stacks and analysed them to choose what I felt would be the best fit for the project. I also gained hands-on experience with the AWS and Terraform, which I used to deploy oour custom CMS.",
+					"This project is currently in progress, but the GitHub respoitory can be found <a class=\"underline hover:opacity-50\" href='https://github.com/adidoesnt/beingsofhabit' target='_blank'>here</a>."
+				]
 			},
 			{
 				"name": "EchoFinder",
