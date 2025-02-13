@@ -171,7 +171,12 @@
 			"date": "Jan 2022",
 			"description": "Started an internship with ByondXR as frontend developer.",
 			"imageHref": null,
-			"longDescription": []
+			"longDescription": [
+				"As part of the NUS Overseas Colleges Programme (NOC), I started an internship with ByondXR in January 2022.",
+				"ByondXR is an extended-reality e-commerce company that used their virtual store builder to create immersive shopping experiences for a range of high-profile luxury fashion brands.",
+				"Initially, I worked on Byond's legacy platform, creating RxJS plugins to add interactivity to virtual stores. However, on the account of my excellent performance, I was transferred to the team responsible for the company's new store builder platform, which was built using ReactJS, GraphQL and MongoDB.",
+				"I continued to work part-time with ByondXR until February 2023."
+			]
 		},
 		{
 			"name": "⚡️ FNSHR",
@@ -185,21 +190,31 @@
 			"date": "Jul 2023",
 			"description": "Graduated from NUS with a Bachelor of Computing (Honours) degree in Computer Science.",
 			"imageHref": null,
-			"longDescription": []
+			"longDescription": [
+				"In July 2023, I graduated from NUS with a Bachelor of Computing (Honours) degree in Computer Science."
+			]
 		},
 		{
 			"name": "👔 Activate Interactive",
 			"date": "Aug 2023",
 			"description": "Began my first full-time job as a full-stack developer at Activate Interactive.",
 			"imageHref": null,
-			"longDescription": []
+			"longDescription": [
+				"Upon graduating from NUS, I commenced my first job as a Senior Programmer Analyst at Activate Interactive.",
+				"Throughout my time at Activate, I was assigned as a full-stack developer for the CRISP project: A secure and compliant automated cloud environment and resource provisioning platform, developed in collaboration with Amazon Web Services Singapore and the Singapore Ministry of Manpower.",
+				"I developed significant portions of 4 out of the 7 backend microservices for the project, as well as the corresponding frontend modules. I also authored a large number of automation scripts to improve developer experience.",
+				"Through this experience, I was able to gain expertise with NodeJS, Express, React, PostgreSQL and various AWS services."
+			]
 		},
 		{
 			"name": "🤖 AI Practitioner",
 			"date": "Feb 2025",
 			"description": "Completed the AWS Certified AI Practitioner exam.",
 			"imageHref": null,
-			"longDescription": []
+			"longDescription": [
+				"After gaining some foundational exposure to AI through some of my side-projects, I decided to certify what I had learned so far.",
+				"I took on the AWS AI Practitioner certification, passing with a strong score. Since the certification was quite new, I was also granted an early adopter badge."
+			]
 		},
 		{
 			"name": "🇬🇧 London",
