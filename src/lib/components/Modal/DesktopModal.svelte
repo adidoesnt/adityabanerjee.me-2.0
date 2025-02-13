@@ -3,7 +3,7 @@
 	import { theme } from '$lib/context/theme';
 
 	const backgroundClass = $derived(
-		$theme === 'dark' ? 'bg-brown text-cream' : 'bg-beige text-darkBrown'
+		$theme === 'dark' ? 'bg-brown text-cream border-darkBrown border-[1px]' : 'bg-beige text-darkBrown border-cream border-[1px]'
 	);
 
 	const { children, show, toggle } = $props();
