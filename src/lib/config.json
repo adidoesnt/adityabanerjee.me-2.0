@@ -150,7 +150,10 @@
 			"date": "May 2020",
 			"description": "Started my first software engineering internship with Strive Math (YC21).",
 			"imageHref": null,
-			"longDescription": []
+			"longDescription": [
+				"In May 2020, I started an internship with Strive Math (YC21), a then pre-seed startup provided tailored online mathematics and coding lessons.",
+				"I worked at Strive as a software engineering intern, as well as a tutor. My key contributions included the automation of payroll, quality control and analytics systems. I also consistently received positive feedback from students and parents for my patient and effective tutoring."
+			]
 		},
 		{
 			"name": "👨🏽‍🏫 OURFinals",
@@ -164,7 +167,12 @@
 			"date": "Aug 2021",
 			"description": "Enrolled in the NUS Overseas Colleges (NOC) Programme.",
 			"imageHref": null,
-			"longDescription": []
+			"longDescription": [
+				"In August 2021, I was accepted into the NUS Overseas Colleges (NOC) Programme after passing a rigorous interview process.",
+				"The programme is designed to provide students with a unique opportunity to study abroad and gain international experience in a variety of fields, such as business and engineering.",
+				"Additionally, the programme includes entrepreneurship classes at a partner university, where students can learn about the startup culture and gain practical experience in conceptualising and launching a business.",
+				"Through the NOC Programme, I was able to gain valuable experience in a foreign country, which allowed me to broaden my perspective and develop my language skills."
+			]
 		},
 		{
 			"name": "💻 ByondXR",
@@ -172,7 +180,7 @@
 			"description": "Started an internship with ByondXR as frontend developer.",
 			"imageHref": null,
 			"longDescription": [
-				"As part of the NUS Overseas Colleges Programme (NOC), I started an internship with ByondXR in January 2022.",
+				"As part of the NUS Overseas Colleges (NOC) Programme, I started an internship with ByondXR in January 2022.",
 				"ByondXR is an extended-reality e-commerce company that used their virtual store builder to create immersive shopping experiences for a range of high-profile luxury fashion brands.",
 				"Initially, I worked on Byond's legacy platform, creating RxJS plugins to add interactivity to virtual stores. However, on the account of my excellent performance, I was transferred to the team responsible for the company's new store builder platform, which was built using ReactJS, GraphQL and MongoDB.",
 				"I continued to work part-time with ByondXR until February 2023."
