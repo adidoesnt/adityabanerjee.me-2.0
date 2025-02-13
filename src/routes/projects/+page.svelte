@@ -28,7 +28,7 @@
 			{projects.tooltips.carousel}
 		</p>
 		<DesktopCarousel centerItemModal items={featuredProjects} />
-		<MobileCarousel items={featuredProjects} />
+		<MobileCarousel modal items={featuredProjects} />
 	</div>
 	<div
 		id="all-projects-container"

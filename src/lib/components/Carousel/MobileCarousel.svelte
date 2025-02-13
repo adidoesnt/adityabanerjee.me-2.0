@@ -4,8 +4,9 @@
 	import { decrementWithModulus, incrementWithModulus } from './utils';
 	import PrevIcon from '$lib/assets/prev-icon.svelte';
 	import NextIcon from '$lib/assets/next-icon.svelte';
+	import MobileModal from '../Modal/MobileModal.svelte';
 
-	let { items } = $props();
+	let { items, modal = false } = $props();
 	let currentIndex = $state(0);
 	const prevIndex = $derived(decrementWithModulus(currentIndex, items.length));
 	const nextIndex = $derived(incrementWithModulus(currentIndex, items.length));
@@ -20,7 +21,10 @@
 		}
 	}
 
-    let showHelp = $state(false);
+	let showModal = $state(false);
+	const toggleShowModal = () => {
+		showModal = !showModal;
+	};
 </script>
 
 <div
@@ -34,8 +38,13 @@
 		{disabled}
 		className={'hidden w-12 h-12 md:flex'}
 	/>
-	<div
+	<button
 		class={`flex flex-col items-center justify-center gap-4 rounded-md p-8 text-center ${$theme === 'dark' ? 'bg-brown text-cream' : 'bg-beige text-darkBrown'}`}
+		onclick={() => {
+			if (modal) {
+				toggleShowModal();
+			}
+		}}
 	>
 		<h1 class="text-lg md:text-xl">{items[currentIndex]?.name}</h1>
 		<img
@@ -43,10 +52,36 @@
 			src={items[currentIndex]?.imageSrc}
 			alt={items[currentIndex]?.name}
 		/>
-	</div>
+	</button>
 	<NextIcon
 		onclick={() => (currentIndex = nextIndex)}
 		{disabled}
 		className={'hidden w-12 h-12 md:flex'}
 	/>
+	<MobileModal show={showModal} toggle={toggleShowModal}>
+		<div class="flex flex-col items-center justify-center gap-4">
+			{#if items[currentIndex]?.date}
+				<div class="flex w-full items-center justify-between">
+					<h1 class="text-lg md:text-xl">{items[currentIndex]?.name}</h1>
+					<p class="text-sm">{items[currentIndex]?.date}</p>
+				</div>
+			{:else}
+				<div class="flex w-full items-center justify-center">
+					<h1 class="text-lg md:text-xl">{items[currentIndex]?.name}</h1>
+				</div>
+			{/if}
+			<img
+				class="aspect-square w-60 rounded-md"
+				src={items[currentIndex]?.imageSrc}
+				alt={items[currentIndex]?.name}
+			/>
+			{#if items[currentIndex]?.longDescription}
+				<div class="flex w-full flex-col items-start justify-center gap-2">
+					{#each items[currentIndex]?.longDescription as description}
+						<p class="text-sm md:text-base">{@html description}</p>
+					{/each}
+				</div>
+			{/if}
+		</div>
+	</MobileModal>
 </div>
