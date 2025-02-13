@@ -27,7 +27,7 @@
 		<p class="block text-center opacity-50 md:hidden">
 			{projects.tooltips.carousel}
 		</p>
-		<DesktopCarousel items={featuredProjects} />
+		<DesktopCarousel centerItemModal items={featuredProjects} />
 		<MobileCarousel items={featuredProjects} />
 	</div>
 	<div
