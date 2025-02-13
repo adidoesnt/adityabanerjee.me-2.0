@@ -160,7 +160,10 @@
 			"date": "Dec 2020",
 			"description": "Established an ad-hoc on-demand peer tutoring platform for university students. Conducted a Python coding bootcamp with the team.",
 			"imageHref": null,
-			"longDescription": []
+			"longDescription": [
+				"OURFinals was an ad-hoc on-demand peer tutoring service for university students. It aimed to bring students and peer tutors together on a per-gig basis.",
+				"I launched the company with my batch-mates Robin, Arnav and Niki. This was my first exposure towards conceptualising and launching a business. Although the startup did not take off, I learned valuable lessons to apply to my next venture."
+			]
 		},
 		{
 			"name": "🏫 NOC",
@@ -191,7 +194,10 @@
 			"date": "Mar 2023",
 			"description": "Established FNSHR, a task management platform that leveraged social and monetary accountability to incentivise task completion.",
 			"imageHref": null,
-			"longDescription": []
+			"longDescription": [
+				"FNSHR (pronounced \"finisher\") was a task management platform that leveraged social and monetary accountability to encourage task completion.",
+				"I conceptualised it along with my fellow NOC alumni Robin and Asaad, and together, we pitched it at the N-House (residence for NOC alumni) Pitch Night at NUS. We finished in second place, allowing us to participate in a final-round pitch to NUS Enterprise, NUS's VC arm. Unfortunately, we were unable to secure seed funding and halted operations for the foreseeable future. However, I still do believe in the idea and hope to pursue it again in the future."
+			]
 		},
 		{
 			"name": "👨🏽‍🎓 Graduation",
@@ -229,7 +235,10 @@
 			"date": "Feb 2025",
 			"description": "Moved to London to pursue my career goals.",
 			"imageHref": null,
-			"longDescription": []
+			"longDescription": [
+				"After graduating from NUS, I became eligible for the UK's High Potential Individual (HPI) visa.",
+				"Having been granted the visa, I decided to explore opportunities in London, relocating in February 2025."
+			]
 		}
 	],
 	"blog": {
