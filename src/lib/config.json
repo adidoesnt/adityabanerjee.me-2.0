@@ -116,8 +116,8 @@
 			"imageHref": "https://abme-timeline-images.s3.eu-west-2.amazonaws.com/ofs-graduation.jpg",
 			"longDescription": [
 				"I started the International Baccalaureate Programme at the Overseas Family School in Singapore in August 2015.",
-				"My subjects included Computer Science, Economics and Theatre at the higher level, and French, Mathematics and English Language at the standard level.",
-				"Outside of academics, I was also heavily involved in the school's cultural and sporting activities, including theatre productions, music concerts, cricket matches.",
+				"My subjects included Computer Science, Economics and Theatre at the higher level, and French, Mathematics and English Language and Literature at the standard level.",
+				"Outside of academics, I was also heavily involved in the school's cultural and sporting activities, including theatre productions, music concerts and cricket matches.",
 				"Having gained a strong theoretical knowledge of computer science and hands-on experience with Java programming, I decided to pursue undergraduate studies in Computer Science."
 			]
 		},
@@ -128,7 +128,7 @@
 			"imageHref": "https://abme-timeline-images.s3.eu-west-2.amazonaws.com/saf.jpg",
 			"longDescription": [
 				"I enlisted in the Singapore Armed Forces in July 2017. I started my service as a recruit in 1st Company, Basic Military Training Centre School 4 in Pulau Tekong.",
-				"On the merit of my performance in BMT (Basic Military Training). I was selected to attend the Specialist Cadet School (SCS) at Pasir Laba Camp to train to become a 3rd Sergeant. The first portion of SCS training was completed in Pasir Laba camp, and the second portion was conducted at the Armour Training Institute (ATI) at Sungei Gedong camp. At ATI, I was trained to be a 3rd sergeant in the Singapore Armed Forces' Armour vocation.",
+				"On the merit of my performance in BMT (Basic Military Training), I was selected to attend the Specialist Cadet School (SCS) at Pasir Laba Camp to train to become a 3rd Sergeant. The first portion of SCS training was completed in Pasir Laba camp, and the second portion was conducted at the Armour Training Institute (ATI) at Sungei Gedong camp. At ATI, I was trained to be a 3rd sergeant in the Singapore Armed Forces' Armour vocation.",
 				"Upon completion of my training at ATI, I was sent to train in Germany for a month under exercise Panzer Strike. Upon my return, I was posted to the 42nd Singapore Armoured Regiment, where I served as a 3rd sergeant.",
 				"During my time in the SAF, I was known for maintaining an extremely high level of fitness, consistently scoring above 90 in fitness tests graded out of 100."
 			]
@@ -140,8 +140,8 @@
 			"imageHref": "https://abme-timeline-images.s3.eu-west-2.amazonaws.com/nus.jpg",
 			"longDescription": [
 				"In August 2019, I enrolled in the Bachelor of Computing Program at the National University of Singapore, majoring in Computer Science.",
-				"I was also able to secure a stay at Residential College 4 (RC4) for the first 2 years of my study, a coveted residence for students that pass the interview process.",
-				"During my time at NUS, I was able to take part in various extracurricular activities. I was a member of Amplified, a student-led collection of rock bands where I performed as a vocalist and drummer. I also co-captained RC4's Dodgeball team for semester, finishing as a runner-up at inter-college games. I was also the publicity head for RC4's Musical Expression Club, and a member of the RC4 Road Relay team.",
+				"I was also able to secure a stay at Residential College 4 (RC4), a coveted residence for students that pass the interview process, for the first 2 years of my study.",
+				"During my time at NUS, I was able to take part in various extracurricular activities. I was a member of Amplified, a student-led collection of rock bands where I performed as a vocalist and drummer. I also co-captained RC4's Dodgeball team for a semester, finishing as a runner-up at the inter-college games for 2021. I was also the publicity head for RC4's Musical Expression Club, and a member of the RC4 Road Relay team.",
 				"Due to my warm and outgoing personality, I was selected as an orientation group leader (OGL) for 2 successive years, helping 2 new batches of students find their feet in NUS and at RC4."
 			]
 		},
@@ -151,7 +151,7 @@
 			"description": "Started my first software engineering internship with Strive Math (YC21).",
 			"imageHref": "https://abme-timeline-images.s3.eu-west-2.amazonaws.com/strive-math.JPG",
 			"longDescription": [
-				"In May 2020, I started an internship with Strive Math (YC21), a then pre-seed startup provided tailored online mathematics and coding lessons.",
+				"In May 2020, I started an internship with Strive Math (YC21), a then pre-seed startup providing tailored online mathematics and coding lessons.",
 				"I worked at Strive as a software engineering intern, as well as a tutor. My key contributions included the automation of payroll, quality control and analytics systems. I also consistently received positive feedback from students and parents for my patient and effective tutoring."
 			]
 		},
@@ -184,7 +184,7 @@
 			"imageHref": "https://abme-timeline-images.s3.eu-west-2.amazonaws.com/byondxr.jpg",
 			"longDescription": [
 				"As part of the NUS Overseas Colleges (NOC) Programme, I started an internship with ByondXR in January 2022.",
-				"ByondXR is an extended-reality e-commerce company that used their virtual store builder to create immersive shopping experiences for a range of high-profile luxury fashion brands.",
+				"ByondXR is an extended-reality e-commerce company that uses their virtual store builder to create immersive shopping experiences for a range of high-profile luxury fashion brands.",
 				"Initially, I worked on Byond's legacy platform, creating RxJS plugins to add interactivity to virtual stores. However, on the account of my excellent performance, I was transferred to the team responsible for the company's new store builder platform, which was built using ReactJS, GraphQL and MongoDB.",
 				"I continued to work part-time with ByondXR until February 2023."
 			]
