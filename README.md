@@ -19,19 +19,19 @@ Alternatively, you can view the design in Figma [here](https://www.figma.com/des
 - [x] Complete landing page
 - [x] Complete about page
 - [x] Complete timeline page
-- [ ] Complete projects page
+- [x] Complete projects page
 - [x] Complete acknowledgements page
 
 ### Version 1.1
 
+- [x] Add timeline item modals
+- [x] Add projects item modals
 - [ ] Add blog page
-- [ ] Add timeline item modals
-- [ ] Add projects item modals
+- [ ] Add content management system
 
 ### Version 1.2
 
 - [ ] Add admin dashboard
-- [ ] Add content management system
 
 ### Version 2.0
 
