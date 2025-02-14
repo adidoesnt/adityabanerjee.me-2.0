@@ -19,7 +19,7 @@
 				<p class="text-sm">{timeline[currentIndex]?.date}</p>
 			</div>
 			{#if timeline[currentIndex]?.imageHref}
-				<img src={timeline[currentIndex]?.imageHref} alt={timeline[currentIndex]?.name} />
+				<img class="w-full rounded-md" src={timeline[currentIndex]?.imageHref} alt={timeline[currentIndex]?.name} />
 			{/if}
 			<div class="flex flex-col gap-2">
 				{#each timeline[currentIndex]?.longDescription as description}

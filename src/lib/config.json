@@ -113,7 +113,7 @@
 			"name": "📚 OFS",
 			"date": "Aug 2015",
 			"description": "Took computer science at the higher level under the international baccalaureate program at the Overseas Family School, Singapore.",
-			"imageHref": null,
+			"imageHref": "https://abme-timeline-images.s3.eu-west-2.amazonaws.com/ofs-graduation.jpg",
 			"longDescription": [
 				"I started the International Baccalaureate Programme at the Overseas Family School in Singapore in August 2015.",
 				"My subjects included Computer Science, Economics and Theatre at the higher level, and French, Mathematics and English Language at the standard level.",
@@ -125,7 +125,7 @@
 			"name": "🇸🇬 SAF",
 			"date": "Jul 2017",
 			"description": "Served national service in the Singapore Armed Forces as a 3rd sergeant at the 42nd Singapore Armoured Regiment.",
-			"imageHref": null,
+			"imageHref": "https://abme-timeline-images.s3.eu-west-2.amazonaws.com/saf.jpg",
 			"longDescription": [
 				"I enlisted in the Singapore Armed Forces in July 2017. I started my service as a recruit in 1st Company, Basic Military Training Centre School 4 in Pulau Tekong.",
 				"On the merit of my performance in BMT (Basic Military Training). I was selected to attend the Specialist Cadet School (SCS) at Pasir Laba Camp to train to become a 3rd Sergeant. The first portion of SCS training was completed in Pasir Laba camp, and the second portion was conducted at the Armour Training Institute (ATI) at Sungei Gedong camp. At ATI, I was trained to be a 3rd sergeant in the Singapore Armed Forces' Armour vocation.",
@@ -137,7 +137,7 @@
 			"name": "🎓 NUS",
 			"date": "Aug 2019",
 			"description": "Enrolled in the Bachelor of Computing Program at the National University of Singapore, majoring in Computer Science.",
-			"imageHref": null,
+			"imageHref": "https://abme-timeline-images.s3.eu-west-2.amazonaws.com/nus.jpg",
 			"longDescription": [
 				"In August 2019, I enrolled in the Bachelor of Computing Program at the National University of Singapore, majoring in Computer Science.",
 				"I was also able to secure a stay at Residential College 4 (RC4) for the first 2 years of my study, a coveted residence for students that pass the interview process.",
@@ -149,7 +149,7 @@
 			"name": "🧮 Strive Math",
 			"date": "May 2020",
 			"description": "Started my first software engineering internship with Strive Math (YC21).",
-			"imageHref": null,
+			"imageHref": "https://abme-timeline-images.s3.eu-west-2.amazonaws.com/strive-math.JPG",
 			"longDescription": [
 				"In May 2020, I started an internship with Strive Math (YC21), a then pre-seed startup provided tailored online mathematics and coding lessons.",
 				"I worked at Strive as a software engineering intern, as well as a tutor. My key contributions included the automation of payroll, quality control and analytics systems. I also consistently received positive feedback from students and parents for my patient and effective tutoring."
@@ -159,7 +159,7 @@
 			"name": "👨🏽‍🏫 OURFinals",
 			"date": "Dec 2020",
 			"description": "Established an ad-hoc on-demand peer tutoring platform for university students. Conducted a Python coding bootcamp with the team.",
-			"imageHref": null,
+			"imageHref": "https://abme-timeline-images.s3.eu-west-2.amazonaws.com/ourfinals.jpeg",
 			"longDescription": [
 				"OURFinals was an ad-hoc on-demand peer tutoring service for university students. It aimed to bring students and peer tutors together on a per-gig basis.",
 				"I launched the company with my batch-mates Robin, Arnav and Niki. This was my first exposure towards conceptualising and launching a business. Although the startup did not take off, I learned valuable lessons to apply to my next venture."
@@ -169,7 +169,7 @@
 			"name": "🏫 NOC",
 			"date": "Aug 2021",
 			"description": "Enrolled in the NUS Overseas Colleges (NOC) Programme.",
-			"imageHref": null,
+			"imageHref": "https://abme-timeline-images.s3.eu-west-2.amazonaws.com/noc.jpg",
 			"longDescription": [
 				"In August 2021, I was accepted into the NUS Overseas Colleges (NOC) Programme after passing a rigorous interview process.",
 				"The programme is designed to provide students with a unique opportunity to study abroad and gain international experience in a variety of fields, such as business and engineering.",
@@ -181,7 +181,7 @@
 			"name": "💻 ByondXR",
 			"date": "Jan 2022",
 			"description": "Started an internship with ByondXR as frontend developer.",
-			"imageHref": null,
+			"imageHref": "https://abme-timeline-images.s3.eu-west-2.amazonaws.com/byondxr.jpg",
 			"longDescription": [
 				"As part of the NUS Overseas Colleges (NOC) Programme, I started an internship with ByondXR in January 2022.",
 				"ByondXR is an extended-reality e-commerce company that used their virtual store builder to create immersive shopping experiences for a range of high-profile luxury fashion brands.",
@@ -193,7 +193,7 @@
 			"name": "⚡️ FNSHR",
 			"date": "Mar 2023",
 			"description": "Established FNSHR, a task management platform that leveraged social and monetary accountability to incentivise task completion.",
-			"imageHref": null,
+			"imageHref": "https://abme-timeline-images.s3.eu-west-2.amazonaws.com/FNSHR.png",
 			"longDescription": [
 				"FNSHR (pronounced \"finisher\") was a task management platform that leveraged social and monetary accountability to encourage task completion.",
 				"I conceptualised it along with my fellow NOC alumni Robin and Asaad, and together, we pitched it at the N-House (residence for NOC alumni) Pitch Night at NUS. We finished in second place, allowing us to participate in a final-round pitch to NUS Enterprise, NUS's VC arm. Unfortunately, we were unable to secure seed funding and halted operations for the foreseeable future. However, I still do believe in the idea and hope to pursue it again in the future."
@@ -203,7 +203,7 @@
 			"name": "👨🏽‍🎓 Graduation",
 			"date": "Jul 2023",
 			"description": "Graduated from NUS with a Bachelor of Computing (Honours) degree in Computer Science.",
-			"imageHref": null,
+			"imageHref": "https://abme-timeline-images.s3.eu-west-2.amazonaws.com/uni-grad.jpg",
 			"longDescription": [
 				"In July 2023, I graduated from NUS with a Bachelor of Computing (Honours) degree in Computer Science."
 			]
@@ -212,7 +212,7 @@
 			"name": "👔 Activate Interactive",
 			"date": "Aug 2023",
 			"description": "Began my first full-time job as a full-stack developer at Activate Interactive.",
-			"imageHref": null,
+			"imageHref": "https://abme-timeline-images.s3.eu-west-2.amazonaws.com/work-laptop.JPG",
 			"longDescription": [
 				"Upon graduating from NUS, I commenced my first job as a Senior Programmer Analyst at Activate Interactive.",
 				"Throughout my time at Activate, I was assigned as a full-stack developer for the CRISP project: A secure and compliant automated cloud environment and resource provisioning platform, developed in collaboration with Amazon Web Services Singapore and the Singapore Ministry of Manpower.",
@@ -224,7 +224,7 @@
 			"name": "🤖 AI Practitioner",
 			"date": "Feb 2025",
 			"description": "Completed the AWS Certified AI Practitioner exam.",
-			"imageHref": null,
+			"imageHref": "https://abme-timeline-images.s3.eu-west-2.amazonaws.com/awsaipraccert.png",
 			"longDescription": [
 				"After gaining some foundational exposure to AI through some of my side-projects, I decided to certify what I had learned so far.",
 				"I took on the AWS AI Practitioner certification, passing with a strong score. Since the certification was quite new, I was also granted an early adopter badge."
@@ -234,7 +234,7 @@
 			"name": "🇬🇧 London",
 			"date": "Feb 2025",
 			"description": "Moved to London to pursue my career goals.",
-			"imageHref": null,
+			"imageHref": "https://abme-timeline-images.s3.eu-west-2.amazonaws.com/adi-in-london.jpg",
 			"longDescription": [
 				"After graduating from NUS, I became eligible for the UK's High Potential Individual (HPI) visa.",
 				"Having been granted the visa, I decided to explore opportunities in London, relocating in February 2025."
@@ -244,7 +244,7 @@
 			"name": "⏳ Coming Soon... Solutions Architect",
 			"date": "March 2025",
 			"description": "Will take on the AWS Associate Solutions Architect exam.",
-			"imageHref": null,
+			"imageHref": "https://abme-timeline-images.s3.eu-west-2.amazonaws.com/aws-saa.jpg",
 			"longDescription": [
 				"I plan to take on the AWS Associate Solutions Architect exam in March 2025, and hopefully pass it!"
 			]
