@@ -35,6 +35,7 @@
 			<p class="text-sm">{getDateWithTime(article.date_updated)}</p>
 		</div>
 		<hr class={`${hrBorderClass} w-full`} />
+		<p class="prose text-lg italic">{article.headline}</p>
 		<div class={`prose text-lg ${proseHeadingTextClass} ${proseATextClass} ${cardBgAndTextClass}`}>
 			{@html article.content}
 		</div>
