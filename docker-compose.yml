@@ -1,10 +1,29 @@
 services:
-  db:
+  directus:
+    image: directus/directus:latest
+    restart: always
+    container_name: directus
+    ports:
+      - 8055:8055
+    environment:
+      SECRET: dummy-secret
+      DB_CLIENT: pg
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_DATABASE: abme
+      DB_USER: abme
+      DB_PASSWORD: abme
+      ADMIN_EMAIL: admin@abme.com
+      ADMIN_PASSWORD: abme
+      PUBLIC_URL: http://localhost:8055
+    depends_on:
+      - postgres
+  postgres:
     image: postgres
     restart: always
     ports:
-      - 5432:5432
+      - 5433:5432
     environment:
-      POSTGRES_USER: root
-      POSTGRES_PASSWORD: mysecretpassword
-      POSTGRES_DB: local
+      POSTGRES_USER: abme
+      POSTGRES_PASSWORD: abme
+      POSTGRES_DB: abme
