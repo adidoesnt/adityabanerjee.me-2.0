@@ -219,7 +219,8 @@
 		}
 	],
 	"blog": {
-		"tooltip": "Click on a post to start reading!"
+		"tooltip": "Click on a post to start reading!",
+		"backToBlog": "Back to Blog"
 	},
 	"prompts": {
 		"info": "Select a question from below!",

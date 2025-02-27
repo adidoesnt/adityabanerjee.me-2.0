@@ -42,6 +42,7 @@
 		"vite": "^6.0.0"
 	},
 	"dependencies": {
+		"@directus/sdk": "^19.0.1",
 		"drizzle-orm": "^0.38.4",
 		"postgres": "^3.4.5",
 		"svelte-gestures": "^5.1.3"

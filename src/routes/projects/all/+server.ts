@@ -22,7 +22,7 @@ export const GET = async () => {
 
 		return new Response(JSON.stringify(data), { status: 200 });
 	} catch (error) {
-		console.error('Error fteching repositories from GitHub:', error);
+		console.error('Error fetching repositories from GitHub:', error);
 		return new Response('Internal Server Error', { status: 500 });
 	}
 };
