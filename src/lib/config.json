@@ -74,38 +74,6 @@
 					"Here is a link to the project's <a class=\"underline hover:opacity-50\" href='https://github.com/adidoesnt/teledr' target='_blank'>GitHub repository</a>."
 				]
 			}
-		],
-		"other": [
-			{
-				"name": "Placeholder",
-				"href": "https://www.placeholder.com",
-				"imageSrc": "/images/placeholder.png"
-			},
-			{
-				"name": "Placeholder",
-				"href": "https://www.placeholder.com",
-				"imageSrc": "/images/placeholder.png"
-			},
-			{
-				"name": "Placeholder",
-				"href": "https://www.placeholder.com",
-				"imageSrc": "/images/placeholder.png"
-			},
-			{
-				"name": "Placeholder",
-				"href": "https://www.placeholder.com",
-				"imageSrc": "/images/placeholder.png"
-			},
-			{
-				"name": "Placeholder",
-				"href": "https://www.placeholder.com",
-				"imageSrc": "/images/placeholder.png"
-			},
-			{
-				"name": "Placeholder",
-				"href": "https://www.placeholder.com",
-				"imageSrc": "/images/placeholder.png"
-			}
 		]
 	},
 	"timeline": [
@@ -251,12 +219,7 @@
 		}
 	],
 	"blog": {
-		"posts": [
-			{
-				"name": "So I rebuilt my portfolio site...",
-				"description": "A deep-dive into how and why I rebuilt my portfolio site."
-			}
-		]
+		"tooltip": "Click on a post to start reading!"
 	},
 	"prompts": {
 		"info": "Select a question from below!",
@@ -356,6 +319,10 @@
 			{
 				"name": "Projects",
 				"href": "/projects"
+			},
+			{
+				"name": "Blog",
+				"href": "/blog"
 			},
 			{
 				"name": "Acknowledgements",
