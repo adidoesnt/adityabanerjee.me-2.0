@@ -1,7 +1,10 @@
+<!-- TODO: Add missing fields like author, date, etc. -->
+<!-- TODO: Fix fonts/layout especially for mobile -->
+
 <script lang="ts">
 	import type { PageProps } from './$types';
 	import { theme } from '$lib/context/theme';
-	import { blog} from '$lib/config.json';
+	import { blog } from '$lib/config.json';
 
 	const { backToBlog } = blog;
 	const { data }: PageProps = $props();
