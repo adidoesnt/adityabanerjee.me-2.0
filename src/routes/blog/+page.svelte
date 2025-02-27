@@ -19,10 +19,11 @@
 			<div
 				class={`${cardBgAndTextClass} flex w-60 flex-col items-start justify-center gap-4 rounded-md p-4`}
 			>
-				<a href={`/blog/${post.id}`} class="underline hover:opacity-50">
+				<a href={`/blog/${post.slug}`} class="underline hover:opacity-50">
 					<h1 class="text-lg md:text-xl">{post.title}</h1></a
 				>
-				<p class="text-sm">{getDateWithTime(post.lastUpdated)}</p>
+				<p class="text-sm">{post.author.name}</p>
+				<p class="text-sm">{getDateWithTime(post.date_updated)}</p>
 			</div>
 		{/each}
 	</div>

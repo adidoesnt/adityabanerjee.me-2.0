@@ -4,11 +4,15 @@ import { readItem } from '@directus/sdk';
 export const GET = async ({ fetch, params }) => {
 	try {
 		const client = getClient(fetch);
-		const { id } = params;
+		const { slug } = params;
 
-		console.log('Fetching article with id:', id);
+		console.log('Fetching article with slug:', slug);
 
-		const article = await client.request(readItem('articles', 1));
+		const article = await client.request(readItem('articles', slug, {
+			fields: ['*', {
+				author: ['name']
+			}]
+		}));
 
 		return new Response(JSON.stringify(article), { status: 200 });
 	} catch (error) {

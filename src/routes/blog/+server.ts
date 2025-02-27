@@ -4,12 +4,16 @@ import { readItems } from "@directus/sdk";
 export const GET = async ({ fetch }) => {
 	try {
         const client = getClient(fetch);
+
+        console.log('Fetching articles from Directus');
         const articles = await client.request(readItems('articles', {
-            fields: ['id', 'title', 'lastUpdated'],
-            sort: '-lastUpdated',
+            fields: ['slug', 'title', 'date_updated', {
+                author: ['name']
+            }],
+            sort: '-date_updated',
             filter: {
-                publish: true
-            }
+                published: true
+            },
         }));
     
         return new Response(JSON.stringify(articles), { status: 200 });
