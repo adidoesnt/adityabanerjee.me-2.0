@@ -23,6 +23,14 @@ resource "aws_ecs_task_definition" "abme_directus_ecs_task" {
             "hostPort": 8055,
             "protocol": "tcp"
         }],
+        "logConfiguration" : {
+            "logDriver" : "awslogs",
+            "options" : {
+                "awslogs-group" : "/ecs/abme_directus_ecs_service",
+                "awslogs-region" : "eu-west-2",
+                "awslogs-stream-prefix" : "ecs"
+            }
+        },
         "environment": [{
             "name": "DB_CLIENT",
             "value": "pg"
@@ -55,6 +63,54 @@ resource "aws_ecs_task_definition" "abme_directus_ecs_task" {
     depends_on = [ 
         aws_db_instance.abme_directus_db,
         aws_secretsmanager_secret.abme_directus_db_credentials,
-        aws_secretsmanager_secret.abme_directus_admin_credentials
+        aws_secretsmanager_secret.abme_directus_admin_credentials,
+        aws_cloudwatch_log_group.abme_directus_log_group
     ]
+}
+
+# ECS cluster for Directus
+resource "aws_ecs_cluster" "abme_directus_ecs_cluster" {
+    name = "abme_directus_ecs_cluster"
+
+    tags = {
+        Name = "abme_directus_ecs_cluster"
+    }
+}
+
+# ECS Service for Directus
+resource "aws_ecs_service" "abme_directus_ecs_service" {
+    name = "abme_directus_ecs_service"
+    cluster = aws_ecs_cluster.abme_directus_ecs_cluster.id
+    task_definition = aws_ecs_task_definition.abme_directus_ecs_task.arn
+    desired_count = 1
+
+    launch_type = "FARGATE"
+
+    network_configuration {
+        subnets = [
+            aws_subnet.abme_directus_private_subnet_1.id,
+            aws_subnet.abme_directus_private_subnet_2.id
+        ]
+
+        security_groups = [
+            aws_security_group.abme_directus_ecs_task_sg.id
+        ]
+
+        assign_public_ip = false
+    }
+
+    load_balancer {
+        target_group_arn = aws_lb_target_group.abme_directus_ecs_task_target_group.arn
+        container_name = "abme_directus"
+        container_port = 8055
+    }
+
+    depends_on = [ 
+        aws_lb_listener.abme_directus_alb_listener
+        # TODO: Add HTTPS listener
+    ]
+
+    tags = {
+        Name = "abme_directus_ecs_service"
+    }
 }
