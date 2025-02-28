@@ -15,16 +15,22 @@
 <div id="blog-page-container" class="flex h-full w-full flex-col items-center justify-start gap-8">
 	<h1 class="text-xl opacity-50">{config.blog.tooltip}</h1>
 	<div class="flex flex-wrap justify-center gap-4 overflow-auto">
-		{#each articles as post}
-			<div
-				class={`${cardBgAndTextClass} flex w-60 flex-col items-start justify-center gap-4 rounded-md p-4`}
-			>
-				<a href={`/blog/${post.slug}`} class="underline hover:opacity-50">
-					<h1 class="text-lg md:text-xl">{post.title}</h1></a
+		{#if articles.length > 0}
+			{#each articles as post}
+				<div
+					class={`${cardBgAndTextClass} flex w-60 flex-col items-start justify-center gap-4 rounded-md p-4`}
 				>
-				<p class="text-sm">{post.author.name}</p>
-				<p class="text-sm">{getDateWithTime(post.date_updated)}</p>
+					<a href={`/blog/${post.slug}`} class="underline hover:opacity-50">
+						<h1 class="text-lg md:text-xl">{post.title}</h1></a
+					>
+					<p class="text-sm">{post.author.name}</p>
+					<p class="text-sm">{getDateWithTime(post.date_updated)}</p>
+				</div>
+			{/each}
+		{:else}
+			<div class="flex w-60 flex-col items-center justify-center gap-4 rounded-md p-4">
+				<h1 class="text-lg md:text-xl">{config.blog.empty}</h1>
 			</div>
-		{/each}
+		{/if}
 	</div>
 </div>

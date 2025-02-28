@@ -220,7 +220,8 @@
 	],
 	"blog": {
 		"tooltip": "Click on a post to start reading!",
-		"backToBlog": "Back to Blog"
+		"backToBlog": "Back to Blog",
+		"empty": "No posts found."
 	},
 	"prompts": {
 		"info": "Select a question from below!",
