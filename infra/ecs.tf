@@ -48,6 +48,15 @@ resource "aws_ecs_task_definition" "abme_directus_ecs_task" {
         }, {
             "name": "PUBLIC_URL",
             "value": "http://${aws_lb.abme_directus_alb.dns_name}"
+        }, {
+            "name": "DB_SSL",
+            "value": "true"
+        }, {
+            "name": "DB_SSL_CA",
+            "value": "/etc/ssl/certs/global-bundle.pem"
+        }, {
+            "name": "NODE_EXTRA_CA_CERTS",
+            "value": "/etc/ssl/certs/global-bundle.pem"
         }],
         "secrets": [{
             "name": "DB_USER",
