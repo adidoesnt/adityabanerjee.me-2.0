@@ -32,7 +32,7 @@ resource "aws_lb_target_group" "abme_directus_ecs_task_target_group" {
 
     health_check {
         enabled = true
-        path = "/"
+        path = "/server/health"
         port = 8055
         protocol = "HTTP"
         interval = 30
@@ -48,7 +48,7 @@ resource "aws_lb_target_group" "abme_directus_ecs_task_target_group" {
 # Listener for ALB
 resource "aws_lb_listener" "abme_directus_alb_listener" {
     load_balancer_arn = aws_lb.abme_directus_alb.arn
-    port = "80"
+    port = 80
     protocol = "HTTP"
 
     default_action {

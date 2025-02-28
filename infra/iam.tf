@@ -51,11 +51,15 @@ resource "aws_iam_policy" "abme_directus_ecs_policy" {
                 Effect = "Allow"
                 Resource = [
                     aws_secretsmanager_secret.abme_directus_db_credentials.arn,
-                    aws_secretsmanager_secret.abme_directus_admin_credentials.arn
+                    aws_secretsmanager_secret.abme_directus_admin_credentials.arn,
+                    aws_secretsmanager_secret.abme_directus_secret.arn
                 ]
             },
             {
-                Action = "logs:CreateLogStream"
+                Action = [
+                    "logs:CreateLogStream",
+                    "logs:PutLogEvents"
+                ],
                 Effect = "Allow"
                 Resource = [
                     "${aws_cloudwatch_log_group.abme_directus_log_group.arn}:*"

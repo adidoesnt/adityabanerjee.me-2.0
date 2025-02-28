@@ -37,16 +37,8 @@ resource "aws_security_group" "abme_directus_ecs_task_sg" {
 
     # Allow inbound HTTP traffic from the ALB
     ingress {
-        from_port = 80
-        to_port = 80
-        protocol = "tcp"
-        security_groups = [ aws_security_group.abme_directus_alb_sg.id ]
-    }
-
-    # Allow inbound HTTPS traffic from the ALB
-    ingress {
-        from_port = 443
-        to_port = 443
+        from_port = 8055
+        to_port = 8055
         protocol = "tcp"
         security_groups = [ aws_security_group.abme_directus_alb_sg.id ]
     }

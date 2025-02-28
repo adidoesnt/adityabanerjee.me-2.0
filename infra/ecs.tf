@@ -35,10 +35,19 @@ resource "aws_ecs_task_definition" "abme_directus_ecs_task" {
             "value": "pg"
         }, {
             "name": "DB_HOST",
-            "value": "${aws_db_instance.abme_directus_db.endpoint}"
+            "value": "${aws_db_instance.abme_directus_db.address}"
+        }, {
+            "name": "DB_PORT",
+            "value": "5432"
         }, {
             "name": "DB_DATABASE",
             "value": "${aws_db_instance.abme_directus_db.db_name}"
+        }, {
+            "name": "WEBSOCKETS_ENABLED",
+            "value": "true"
+        }, {
+            "name": "PUBLIC_URL",
+            "value": "http://${aws_lb.abme_directus_alb.dns_name}"
         }],
         "secrets": [{
             "name": "DB_USER",
@@ -52,6 +61,9 @@ resource "aws_ecs_task_definition" "abme_directus_ecs_task" {
         }, {
             "name": "ADMIN_PASSWORD",
             "valueFrom": "${aws_secretsmanager_secret.abme_directus_admin_credentials.arn}:password::"
+        }, {
+            "name": "SECRET",
+            "valueFrom": "${aws_secretsmanager_secret.abme_directus_secret.arn}:secret::"
         }]
     }])
 

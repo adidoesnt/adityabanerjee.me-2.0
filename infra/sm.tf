@@ -41,3 +41,24 @@ resource "aws_secretsmanager_secret_version" "abme_directus_admin_credentials" {
         password = random_password.abme_directus_admin_password.result
     })
 }
+
+# Generate secret for Directus JWT secret
+resource "random_password" "abme_directus_secret" {
+    length = 16
+    special = true
+    upper = true
+    lower = true
+    numeric = true
+}
+
+resource "aws_secretsmanager_secret" "abme_directus_secret" {
+    name = "abme_directus_secret"
+    description = "Secret for Directus"
+}
+
+resource "aws_secretsmanager_secret_version" "abme_directus_secret" {
+    secret_id = aws_secretsmanager_secret.abme_directus_secret.id
+    secret_string = jsonencode({
+        secret = random_password.abme_directus_secret.result
+    })
+}
