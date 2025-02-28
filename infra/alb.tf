@@ -35,9 +35,9 @@ resource "aws_lb_target_group" "abme_directus_ecs_task_target_group" {
         path = "/server/health"
         port = 8055
         protocol = "HTTP"
-        interval = 30
-        healthy_threshold = 2
-        unhealthy_threshold = 2
+        interval = 60
+        healthy_threshold = 5
+        unhealthy_threshold = 5
     }
 
     tags = {
