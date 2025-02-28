@@ -10,7 +10,6 @@ resource "aws_ecs_task_definition" "abme_directus_ecs_task" {
     execution_role_arn = aws_iam_role.abme_directus_ecs_execution_role.arn
     task_role_arn = aws_iam_role.abme_directus_ecs_task_role.arn
 
-    # TODO: Add logging configuration
     # TODO: Add public URL from the ALB
     container_definitions = jsonencode([{
         "name": "abme_directus",

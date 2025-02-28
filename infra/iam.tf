@@ -39,8 +39,8 @@ resource "aws_iam_role" "abme_directus_ecs_task_role" {
 }
 
 # ECS task role policy (allows secrets manager)
-resource "aws_iam_policy" "abme_directus_ecs_task_role" {
-    name = "abme_directus_ecs_task_role_policy"
+resource "aws_iam_policy" "abme_directus_ecs_policy" {
+    name = "abme_directus_ecs_policy"
     description = "ECS task role policy for Directus"
 
     policy = jsonencode({
@@ -49,13 +49,28 @@ resource "aws_iam_policy" "abme_directus_ecs_task_role" {
             {
                 Action = "secretsmanager:GetSecretValue"
                 Effect = "Allow"
-                Resource = aws_secretsmanager_secret.abme_directus_db_credentials.arn
-            }
+                Resource = [
+                    aws_secretsmanager_secret.abme_directus_db_credentials.arn,
+                    aws_secretsmanager_secret.abme_directus_admin_credentials.arn
+                ]
+            },
+            {
+                Action = "logs:CreateLogStream"
+                Effect = "Allow"
+                Resource = [
+                    "${aws_cloudwatch_log_group.abme_directus_log_group.arn}:*"
+                ]
+            },
         ]
     })
 }
 
 resource "aws_iam_role_policy_attachment" "abme_directus_ecs_task_policy_attachment" {
     role = aws_iam_role.abme_directus_ecs_task_role.name
-    policy_arn = aws_iam_policy.abme_directus_ecs_task_role.arn
+    policy_arn = aws_iam_policy.abme_directus_ecs_policy.arn
+}
+
+resource "aws_iam_role_policy_attachment" "abme_directus_ecs_execution_policy_attachment" {
+    role = aws_iam_role.abme_directus_ecs_execution_role.name
+    policy_arn = aws_iam_policy.abme_directus_ecs_policy.arn
 }
