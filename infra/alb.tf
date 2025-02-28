@@ -28,6 +28,7 @@ resource "aws_lb_target_group" "abme_directus_ecs_task_target_group" {
     port = 8055
     protocol = "HTTP"
     vpc_id = aws_vpc.abme_directus_vpc.id
+    target_type = "ip"
 
     health_check {
         enabled = true
