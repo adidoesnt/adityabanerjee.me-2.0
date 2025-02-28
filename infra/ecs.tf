@@ -13,7 +13,7 @@ resource "aws_ecs_task_definition" "abme_directus_ecs_task" {
     # TODO: Add public URL from the ALB
     container_definitions = jsonencode([{
         "name": "abme_directus",
-        "image": "directus/directus:latest",
+        "image": "${aws_ecr_repository.abme_directus_ecr.repository_url}:latest",
         "memory": 512,
         "cpu": 256,
         "essential": true,
