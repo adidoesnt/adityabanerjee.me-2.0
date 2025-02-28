@@ -13,7 +13,7 @@ services:
       DB_DATABASE: abme
       DB_USER: abme
       DB_PASSWORD: abme
-      ADMIN_EMAIL: admin@abme.com
+      ADMIN_EMAIL: admin@adityabanerjee.me
       ADMIN_PASSWORD: abme
       PUBLIC_URL: http://localhost:8055
     depends_on:

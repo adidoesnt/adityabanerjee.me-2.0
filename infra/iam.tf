@@ -1,3 +1,23 @@
+# ECS execution role
+resource "aws_iam_role" "abme_directus_ecs_execution_role" {
+    name = "abme_directus_ecs_execution_role"
+    description = "ECS execution role for Directus"
+
+    assume_role_policy = jsonencode({
+        Version = "2012-10-17"
+        Statement = [
+            {
+                Action = "sts:AssumeRole"
+                Effect = "Allow"
+                Sid = ""
+                Principal = {
+                    Service = "ecs-tasks.amazonaws.com"
+                }
+            }
+        ]
+    })
+}
+
 # ECS task role 
 resource "aws_iam_role" "abme_directus_ecs_task_role" {
     name = "abme_directus_ecs_task_role"
