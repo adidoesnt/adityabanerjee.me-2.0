@@ -126,8 +126,8 @@ resource "aws_ecs_service" "abme_directus_ecs_service" {
     }
 
     depends_on = [ 
-        aws_lb_listener.abme_directus_alb_listener
-        # TODO: Add HTTPS listener
+        aws_lb_listener.abme_directus_alb_listener,
+        aws_lb_listener.abme_directus_alb_https_listener
     ]
 
     tags = {
