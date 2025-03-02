@@ -68,7 +68,7 @@ resource "aws_ecs_task_definition" "abme_directus_ecs_task" {
             "value": "${aws_s3_bucket.directus.id}"
         }, {
             "name": "STORAGE_S3_ENDPOINT",
-            "value": "s3.amazonaws.com"
+            "value": "s3-eu-west-2.amazonaws.com"
         }, {
             "name": "STORAGE_S3_REGION",
             "value": "eu-west-2"
