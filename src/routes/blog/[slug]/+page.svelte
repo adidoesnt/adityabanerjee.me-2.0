@@ -36,7 +36,7 @@
 		</div>
 		<hr class={`${hrBorderClass} w-full`} />
 		<p class="prose text-lg italic">{article.headline}</p>
-		<div class={`prose text-lg ${proseHeadingTextClass} ${proseATextClass} ${cardBgAndTextClass}`}>
+		<div class={`prose text-lg ${proseHeadingTextClass} ${proseATextClass} ${cardBgAndTextClass} overflow-x-hidden break-words`}>
 			{@html article.content}
 		</div>
 		<a href="/blog" class="underline hover:opacity-50 flex self-start">
