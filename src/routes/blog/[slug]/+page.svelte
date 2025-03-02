@@ -27,7 +27,7 @@
 
 <div id="blog-page-container" class="flex h-full w-full flex-col items-center justify-center gap-8">
 	<div
-		class={`${cardBgAndTextClass} flex w-fit flex-col items-center justify-start gap-4 rounded-md p-8 overflow-auto`}
+		class={`${cardBgAndTextClass} flex w-full md:w-fit flex-col items-center justify-start gap-4 rounded-md p-4 md:p-8 overflow-auto`}
 	>
 		<h1 class="text-4xl">{article.title}</h1>
 		<div class="flex w-full justify-between">
@@ -36,7 +36,7 @@
 		</div>
 		<hr class={`${hrBorderClass} w-full`} />
 		<p class="prose text-lg italic">{article.headline}</p>
-		<div class={`prose text-lg ${proseHeadingTextClass} ${proseATextClass} ${cardBgAndTextClass} overflow-x-hidden break-words`}>
+		<div class={`prose text-lg ${proseHeadingTextClass} ${proseATextClass} ${cardBgAndTextClass} break-words w-full md:w-fit`}>
 			{@html article.content}
 		</div>
 		<a href="/blog" class="underline hover:opacity-50 flex self-start">
