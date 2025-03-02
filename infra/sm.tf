@@ -62,3 +62,17 @@ resource "aws_secretsmanager_secret_version" "abme_directus_secret" {
         secret = random_password.abme_directus_secret.result
     })
 }
+
+# Store AWS account credentials for Directus
+resource "aws_secretsmanager_secret" "aws_credentials" {
+    name = "account_credentials"
+    description = "AWS account credentials for Directus"
+}
+
+resource "aws_secretsmanager_secret_version" "account_credentials" {
+    secret_id = aws_secretsmanager_secret.aws_credentials.id
+    secret_string = jsonencode({
+        aws_access_key_id = var.aws_access_key_id
+        aws_secret_access_key = var.aws_secret_access_key
+    })
+}
