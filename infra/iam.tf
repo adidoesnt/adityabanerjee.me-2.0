@@ -52,7 +52,8 @@ resource "aws_iam_policy" "abme_directus_ecs_policy" {
         Resource = [
           aws_secretsmanager_secret.abme_directus_db_credentials.arn,
           aws_secretsmanager_secret.abme_directus_admin_credentials.arn,
-          aws_secretsmanager_secret.abme_directus_secret.arn
+          aws_secretsmanager_secret.abme_directus_secret.arn,
+          aws_secretsmanager_secret.aws_credentials.arn
         ]
       },
       {
