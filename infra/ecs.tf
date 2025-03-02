@@ -90,10 +90,10 @@ resource "aws_ecs_task_definition" "abme_directus_ecs_task" {
             "valueFrom": "${aws_secretsmanager_secret.abme_directus_secret.arn}:secret::"
         }, {
             "name": "STORAGE_S3_KEY",
-            "valueFrom": "${aws_secretsmanager_secret.aws_credentials.arn}:aws_access_key_id::"
+            "valueFrom": "${aws_secretsmanager_secret.directus_s3_credentials.arn}:aws_access_key_id::"
         }, {
             "name": "STORAGE_S3_SECRET",
-            "valueFrom": "${aws_secretsmanager_secret.aws_credentials.arn}:aws_secret_access_key::"
+            "valueFrom": "${aws_secretsmanager_secret.directus_s3_credentials.arn}:aws_secret_access_key::"
         }]
     }])
 

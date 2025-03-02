@@ -3,13 +3,13 @@ provider "aws" {
   region  = "eu-west-2"
 }
 
-variable "aws_access_key_id" {
-  description = "AWS Access Key ID"
+variable "abme_directus_s3_access_key_id" {
+  description = "AWS Access Key ID for Directus S3"
   type        = string
 }
 
-variable "aws_secret_access_key" {
-  description = "AWS Secret Access Key"
+variable "abme_directus_s3_secret_access_key" {
+  description = "AWS Secret Access Key for Directus S3"
   type        = string
 }
 
