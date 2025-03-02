@@ -57,6 +57,21 @@ resource "aws_ecs_task_definition" "abme_directus_ecs_task" {
         }, {
             "name": "NODE_EXTRA_CA_CERTS",
             "value": "/etc/ssl/certs/global-bundle.pem"
+        }, {
+            "name": "STORAGE_LOCATIONS",
+            "value": "s3"
+        }, {
+            "name": "STORAGE_S3_DRIVER",
+            "value": "s3"
+        }, {
+            "name": "STORAGE_S3_BUCKET",
+            "value": "${aws_s3_bucket.directus.id}"
+        }, {
+            "name": "STORAGE_S3_ENDPOINT",
+            "value": "s3.amazonaws.com"
+        }, {
+            "name": "STORAGE_S3_REGION",
+            "value": "eu-west-2"
         }],
         "secrets": [{
             "name": "DB_USER",
@@ -73,6 +88,12 @@ resource "aws_ecs_task_definition" "abme_directus_ecs_task" {
         }, {
             "name": "SECRET",
             "valueFrom": "${aws_secretsmanager_secret.abme_directus_secret.arn}:secret::"
+        }, {
+            "name": "STORAGE_S3_KEY",
+            "valueFrom": "${aws_secretsmanager_secret.aws_credentials.arn}:aws_access_key_id::"
+        }, {
+            "name": "STORAGE_S3_SECRET",
+            "valueFrom": "${aws_secretsmanager_secret.aws_credentials.arn}:aws_secret_access_key::"
         }]
     }])
 
