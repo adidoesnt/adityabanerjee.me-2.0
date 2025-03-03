@@ -3,25 +3,12 @@
 	import HamburgerIcon from '$lib/assets/hamburger-icon.svelte';
 	import NavBar from './NavBar.svelte';
 	import { fade } from 'svelte/transition';
-	import { onNavigate } from '$app/navigation';
 
 	let show = $state(false);
 
 	const onclick = () => {
 		show = !show;
 	};
-
-	onNavigate((navigation) => {
-		if (!document.startViewTransition) return;
-
-		return new Promise((resolve) => {
-			document.startViewTransition(async () => {
-				resolve();
-				await navigation.complete;
-				show = false;
-			});
-		});
-	});
 </script>
 
 <HamburgerIcon {onclick} />
