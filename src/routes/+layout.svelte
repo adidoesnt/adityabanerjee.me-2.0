@@ -3,6 +3,7 @@
 	import Header from '$lib/components/Header.svelte';
 	import '../app.css';
 	import { theme } from '$lib/context/theme';
+	import { onNavigate } from '$app/navigation';
 
 	let { children } = $props();
 
@@ -11,6 +12,17 @@
 			? 'bg-darkBrown text-cream font-itim'
 			: 'bg-cream text-darkBrown font-itim'
 	);
+
+	onNavigate((navigation) => {
+	if (!document.startViewTransition) return;
+
+	return new Promise((resolve) => {
+		document.startViewTransition(async () => {
+			resolve();
+				await navigation.complete;
+			});
+		});
+	});
 </script>
 
 <main>
