@@ -4,6 +4,7 @@
 	import '../app.css';
 	import { theme } from '$lib/context/theme';
 	import { onNavigate } from '$app/navigation';
+	import { toggleHamburgerMenu } from '$lib/context/hamburger';
 
 	let { children } = $props();
 
@@ -14,15 +15,16 @@
 	);
 
 	onNavigate((navigation) => {
-	if (!document.startViewTransition) return;
+		if (!document.startViewTransition) return;
 
-	return new Promise((resolve) => {
-		document.startViewTransition(async () => {
-			resolve();
-				await navigation.complete;
+		return new Promise((resolve) => {
+			document.startViewTransition(async () => {
+					resolve();
+					toggleHamburgerMenu();
+					await navigation.complete;
+				});
 			});
 		});
-	});
 </script>
 
 <main>
