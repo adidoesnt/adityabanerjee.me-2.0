@@ -26,12 +26,15 @@ Alternatively, you can view the design in Figma [here](https://www.figma.com/des
 
 - [x] Add timeline item modals
 - [x] Add projects item modals
-- [ ] Add blog page
-- [ ] Add content management system
+- [x] Add blog page
+- [x] Add content management system
 
 ### Version 1.2
 
-- [ ] Add admin dashboard
+- [x] Add admin dashboard
+- [ ] Add toast notifications
+- [ ] Add blog post categories
+- [ ] Add blog post search and filter
 
 ### Version 2.0
 
