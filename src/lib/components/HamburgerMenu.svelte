@@ -27,7 +27,7 @@
 			<h1 class="text-3xl font-bold">Menu</h1>
 			<br />
 
-			<NavBar hamburgerMenu={true} />
+			<NavBar hamburgerMenu={true} closeHamburgerMenu={onclick} />
 
 			<br />
 			<div class="flex flex-col gap-2">
