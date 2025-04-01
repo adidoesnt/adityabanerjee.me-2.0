@@ -209,12 +209,13 @@
 			]
 		},
 		{
-			"name": "⏳ Coming Soon... Solutions Architect",
-			"date": "March 2025",
-			"description": "Will take on the AWS Associate Solutions Architect exam.",
-			"imageHref": "https://abme-timeline-images.s3.eu-west-2.amazonaws.com/aws-saa.jpg",
+			"name": "👷🏽‍♂️ Solutions Architect (Associate)",
+			"date": "April 2025",
+			"description": "Completed the AWS Associate Solutions Architect exam.",
+			"imageHref": "https://abme-timeline-images.s3.eu-west-2.amazonaws.com/aws-saa-cert.png",
 			"longDescription": [
-				"I plan to take on the AWS Associate Solutions Architect exam in March 2025, and hopefully pass it!"
+				"Having gained experience with AWS and complementary IaC technologies such as Terraform, I decided to take on the AWS Associate Solutions Architect exam to formalise my knowledge.",
+				"I passed the exam with a strong score, and was granted the AWS Certified Solutions Architect Associate certification."
 			]
 		}
 	],
