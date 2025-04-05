@@ -50,6 +50,10 @@ resource "aws_s3_bucket" "directus" {
   tags = {
     Name = "abme-directus"
   }
+
+  lifecycle {
+    prevent_destroy = true
+  }
 }
 
 resource "aws_s3_bucket_public_access_block" "directus_public_access_block" {
@@ -59,6 +63,10 @@ resource "aws_s3_bucket_public_access_block" "directus_public_access_block" {
   block_public_policy     = false
   ignore_public_acls      = false
   restrict_public_buckets = false
+
+  lifecycle {
+    prevent_destroy = true
+  }
 }
 
 resource "aws_s3_bucket_policy" "directus_public_read_policy" {
@@ -77,4 +85,8 @@ resource "aws_s3_bucket_policy" "directus_public_read_policy" {
   })
 
   depends_on = [aws_s3_bucket_public_access_block.directus_public_access_block]
+
+  lifecycle {
+    prevent_destroy = true
+  }
 }
