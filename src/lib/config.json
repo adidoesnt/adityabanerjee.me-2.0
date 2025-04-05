@@ -222,7 +222,8 @@
 	"blog": {
 		"tooltip": "Click on a post to start reading!",
 		"backToBlog": "Back to Blog",
-		"empty": "No posts found."
+		"empty": "No posts found.",
+		"underMaintenance": "This feature is currently under maintenance. Please check back soon!"
 	},
 	"prompts": {
 		"info": "Select a question from below!",

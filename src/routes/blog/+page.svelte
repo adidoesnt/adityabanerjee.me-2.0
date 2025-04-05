@@ -13,7 +13,8 @@
 </script>
 
 <div id="blog-page-container" class="flex h-full w-full flex-col items-center justify-start gap-8">
-	<h1 class="text-xl opacity-50">{config.blog.tooltip}</h1>
+	<!-- TODO: fetch from Directus -->
+	<!-- <h1 class="text-xl opacity-50">{config.blog.tooltip}</h1>
 	<div class="flex flex-wrap justify-center gap-4 overflow-auto">
 		{#if articles.length > 0}
 			{#each articles as post}
@@ -32,5 +33,14 @@
 				<h1 class="text-lg md:text-xl">{config.blog.empty}</h1>
 			</div>
 		{/if}
+	</div> -->
+
+	<!-- TODO: Remove maintenance mode -->
+	<div class="flex h-full w-full flex-col items-center justify-center gap-4">
+		<div class="flex flex-wrap justify-center gap-4 overflow-auto w-full h-full ">
+			<div class="flex flex-col items-start justify-center gap-4 rounded-md p-4 text-center">
+				<h1 class="text-xl md:text-2xl">{config.blog.underMaintenance}</h1>
+			</div>
+		</div>
 	</div>
 </div>

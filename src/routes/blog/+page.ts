@@ -1,14 +1,15 @@
 import type { PageLoad } from './$types';
 
-export const load: PageLoad = async ({ fetch }) => {
-	const response = await fetch('/blog');
+// TODO: fetch from Directus
+export const load: PageLoad = async (/* { fetch } */) => {
+	// const response = await fetch('/blog');
 
-	if (!response.ok) {
-		throw new Error('Failed to fetch blog posts from Directus');
-	}
+	// if (!response.ok) {
+	// 	throw new Error('Failed to fetch blog posts from Directus');
+	// }
 
-	const articles = await response.json();
+	// const articles = await response.json();
 	return {
-		articles
+		articles: []
 	};
 };
