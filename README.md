@@ -39,3 +39,20 @@ Alternatively, you can view the design in Figma [here](https://www.figma.com/des
 ### Version 2.0
 
 - [ ] Replace about page prompt answers with RAG based response
+
+## Temporary Notes
+
+- Need to optimise infra costs. The current setup is well-architected but the costs are too high.
+- Can consider the following architecture:
+
+  ```
+  Always Running:
+  - ECS Task in private subnet
+  - RDS
+  - S3
+  - VPC Endpoints for API Gateway/Lambda
+
+  On-Demand (when writing):
+  + ALB
+  + NAT Gateway
+  ```
