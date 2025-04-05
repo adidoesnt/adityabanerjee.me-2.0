@@ -1,6 +1,10 @@
 # Timeline images bucket
 resource "aws_s3_bucket" "timeline_images" {
   bucket = "abme-timeline-images"
+
+  lifecycle {
+    prevent_destroy = true
+  }
 }
 
 resource "aws_s3_bucket_public_access_block" "public_access_block" {
@@ -10,6 +14,10 @@ resource "aws_s3_bucket_public_access_block" "public_access_block" {
   block_public_policy     = false
   ignore_public_acls      = false
   restrict_public_buckets = false
+
+  lifecycle {
+    prevent_destroy = true
+  }
 }
 
 resource "aws_s3_bucket_policy" "public_read_policy" {
@@ -28,6 +36,10 @@ resource "aws_s3_bucket_policy" "public_read_policy" {
   })
 
   depends_on = [aws_s3_bucket_public_access_block.public_access_block]
+
+  lifecycle {
+    prevent_destroy = true
+  }
 }
 
 
